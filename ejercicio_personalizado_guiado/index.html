@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Fanta</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div {
+            width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            display: inline-block;/*permite colocar el texto lado la imagen*/
+            width: 100%;/*ancho de la caja donde esta el texto*/
+            text-align: center;
+            text-shadow: grey 2px 2px 5px;/**/
+            color: orange;
+            font-style: oblique;
+            font-family: cursive;
+        }
+
+        .encabezado {
+            width: 900px;
+        }
+
+        .encabezado img {
+            width: 84px;
+            margin-top: 10px;
+            /* text-align: left; */
+        }
+        ul{
+           text-align: center;
+           padding: 100px 0px 50px; 
+        }
+        li{
+            color: white;
+            padding:2px 15px;
+            display: inline-block;
+            background-color: darkblue;
+            border-radius: 25px;
+        }
+
+        .contenido img {
+            width: 300px;
+            float: left;/*ubicar a la izquierda y hacer que sea flotante para que el texto que esta a continuacion se pueda alinear a la imagen*/
+            margin: 0px 20px 20px 0px;
+            border-radius: 25px;
+            box-shadow: grey 4px 4px 14px;
+        }
+        .contenido {
+            margin-bottom: 30px;
+        }
+        span {
+            color: orange;
+        }
+       
+        .pie p{
+            color:white;
+            text-align: right;
+            background-color: orange;
+            padding: 5px 5px ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="encabezado">
+        <img src="images/logo.svg" alt="logo_fanta">
+        <h1>Nueva bebida refrescante</h1>
+    </div>
+    <div >
+        <ul>
+            <li>Presentación</li>
+            <li>Contacta</li>
+        </ul>
+    </div>
+    <div class="contenido">
+        <img src="images/historiaFanta.jpg" alt="">
+        <h2>¿Que es Fanta?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi tempore ea odio doloribus mollitia
+            nisi voluptas, aperiam consequatur doloremque laudantium vel quia animi natus, possimus libero. Nemo, earum
+            eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam provident consequatur debitis architecto facilis, excepturi minima hic enim, iusto quis quidem rerum repudiandae facere ex eum. Aperiam impedit quae doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, incidunt ex enim perferendis reiciendis officiis in labore nesciunt ipsa sed dolorem unde quia velit sunt, fugiat quas! Inventore,<span> eaque quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> Explicabo numquam maxime voluptates ab nobis ipsum distinctio exercitationem corrupti cupiditate soluta fugit dolor saepe alias, architecto, animi officia incidunt eius et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aperiam sunt laudantium ullam autem voluptatum quaerat eos dolore sapiente laboriosam? Corporis, est. Corporis nobis aliquam quae, error rem maiores unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati architecto quas corporis fugit impedit minus explicabo illum dolor delectus? Expedita qui aspernatur ipsa beatae sint ratione, facere repellat soluta nesciunt.</p>
+        <h2>¿Por qué lo usamos?</h2>
+        <p>Fanta, uno de los productos estrella de Coca-Cola, acaba de renovar su imagen, aunque lo ha hecho únicamente
+            en 4 países europeos:<span> Italia, Polonia, Serbia y Malta -por ahora-. </span>Aunque aún no hay confirmación oficial
+            por parte de Coca-Cola, a la vista de sus últimas estrategias de marca, se presume que la nueva imagen se
+            acabará aplicando en todos los países donde opera.
+        </p>
+    </div>
+    <div class="pie">
+        <p>telefono 015215145451212 direccion: Madrid</p>
+    </div>
+</body>
+
+</html>
