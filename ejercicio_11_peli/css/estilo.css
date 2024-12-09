@@ -1,0 +1,70 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing: 0; */
+}
+
+/* NAVEGACION */
+.navegacion {
+  position: fixed;
+  background-color: black;
+  padding: 15px;
+  width: 100%;
+}
+
+.navegacion ul {
+  width: 620px;
+  background: linear-gradient(to top, grey, white);
+  margin: auto;
+  border-radius: 10px;
+}
+.navegacion li {
+  padding: 5px 20px;
+  display:inline-block;
+}
+li a{
+    color: black;
+    text-decoration: none;
+}
+li:hover{
+    background: radial-gradient(white,transparent);
+}
+/* CABECERA */
+.cabecero{
+    /* height: 600px; */
+    background-color: gold;
+    text-align: center;
+    padding: 100px;
+}
+.cabecero figure img{
+    width: 800px;
+    box-shadow: black 10px 10px 20px;
+}
+/* SINOPSIS */
+h2{
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+}
+#s{
+    padding: 70px 0;
+    width: 800px;
+    margin: auto;
+    /* background-color: aqua; */
+}
+#s h2{
+    margin-right: 50px;
+    /* display: inline-block; */
+    /* background-color: brown; */
+    float: left;
+}
+#s div{
+    /* background-color: olivedrab; */
+    width: 600px;
+    padding-left: 200px ;
+    text-align: justify;
+}
+#s p{
+    margin-bottom: 20px;
+    /* display: inline-block; */
+    /* background-color: chocolate; */
+}
