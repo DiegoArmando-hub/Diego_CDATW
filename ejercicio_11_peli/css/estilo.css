@@ -42,8 +42,12 @@ li:hover{
 }
 /* SINOPSIS */
 h2{
-    font-family: "Radio Canada Big", sans-serif;
+    /* font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto; */
+    font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 #s{
     padding: 70px 0;
