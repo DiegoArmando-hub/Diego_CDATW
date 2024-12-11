@@ -32,7 +32,7 @@ li:hover {
 /* CABECERA */
 .cabecero {
   /* height: 600px; */
-  background-color: gold;
+  /* background-color: gold; */
   text-align: center;
   padding: 80px 0px 25px;
 }
@@ -50,7 +50,7 @@ h2 {
   font-style: normal;
 }
 #s,#d,#c, #r, #f {
-  padding: 30px 0;
+  padding: 10px 0;
   width: 800px;
   margin: auto;
   /* background-color: aqua; */
@@ -86,18 +86,27 @@ h2 {
 
 #d figure
 {
-    margin: 10px 0px 60px;
-    background-color: aqua;
+    /* margin: 10px 0px ; */
+  margin-top: 10px;
+  padding-bottom: 35px;
+  padding-top: 15px;
+    /* background-color: aqua; */
+}
+#d figure figcaption{
+  padding: 0;
 }
 #d figure figcaption p {
     /* width: 800px; */
     margin: 10px 0px 0px ;
-    background-color: yellow;
+    /* background-color: yellow; */
     text-align: justify;
+   padding-top: 10px;
+    padding-left: 150px;
 }
 #d figure img{
     float: left;/*lo que hace es que la imagen se haga flotange a lado izquierdo*/
     clear:both;
+    margin-right: 20px;
    
 }
 /* efecto parallax 2 */
