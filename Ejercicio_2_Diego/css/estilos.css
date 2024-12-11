@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#cf {
+    background-color: blue;
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+}
+#cf div p{
+    color: white;
+    float:left;
+}
+#cf div ul{
+    float:right;
+    margin-right: 20px;
+}
+#cf li{
+    display: inline-block;
+    
+}
