@@ -1,22 +1,106 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+header {
+  position: fixed;
+  width: 100%;
+}
+
 #cf {
-    background-color: blue;
-    position: fixed;
-    padding: 10px;
-    width: 100%;
+  padding: 5px;
+  width: 800px;
+  margin: auto;
+  background: linear-gradient(to top,white,grey);
 }
-#cf div p{
-    color: white;
-    float:left;
+
+#cf p {
+  /* color: white; */
+  float: left;
 }
-#cf div ul{
-    float:right;
-    margin-right: 20px;
+
+#cf ul {
+  border-radius: 10px;
+  text-align: right;
 }
-#cf li{
-    display: inline-block;
-    
+#cf li {
+  display: inline-block;
 }
+/* navegacion */
+nav {
+  /* margin-top: 27px; */
+  /* background-color: transparent; */
+  width: 100%;
+  /* padding: 15px; */
+  position: fixed;
+}
+#naveg{
+  padding: 5px;
+  width: 800px ;
+    margin: auto;
+
+}
+#naveg img {
+  width: 80px;
+  text-align: left;
+  /* background-color: aquamarine; */
+}
+#naveg ul {
+   float: right;
+  /* background-color: green; */
+  width: 500px;
+  text-align: right;
+  /* margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+
+}
+#naveg ul li {
+  display: inline-block;
+  padding: 10px ;
+  text-align: right;
+  color: aliceblue;
+}
+#con{
+  position: absolute;
+  top: 65%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+#principal{
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9),rgba(47, 47, 47, 0.3)), url(../images/cab.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 800px;
+
+
+}
+#p1{
+  color: orange;
+  font-size: 30px;
+}
+
+#con h1{
+  color: white;
+  font-size: 60px;
+  width: 600px;
+}
+#p2{
+  
+  background-color: orange;
+  color: aliceblue;
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+
