@@ -13,7 +13,6 @@
 nav{
     background-color: black;
     position: fixed;
-    /* width: 100%; */
     padding: 15px;
     width: 100%;
 }
@@ -53,6 +52,12 @@ header figure img {
 
 /* sinopsis */
 
+#s,#d,#c,#r,#f{
+    padding: 60px 0;
+    width: 800px;
+    margin: auto;
+}
+
 h2{
     font-family: "Radio Canada Big", sans-serif;
     font-optical-sizing: auto;
@@ -61,12 +66,12 @@ h2{
   
 }
 
-#s,#d,#c,#r,#f{
-    padding: 60px 0;
-    width: 800px;
-    margin: auto;
-
-
+#s div,#c div,#r div,#f div{
+    width: 100%;
+    /* display: inline-block; */
+    padding-left: 250px;
+    text-align: justify;
+  
 }
 
 
@@ -74,25 +79,13 @@ h2{
     margin-bottom: 20px;
     text-align: justify;
 }
-#s div,#c div,#r div,#f div{
-    width: 100%;
 
-    /* display: inline-block; */
-    padding-left: 250px;
-    text-align: justify;
-
-    
-}
 .paralax{
     /* width: 100%; */
     height: 500px;
     background-image: url(../images/aliceparallax.jpg);
     background-attachment: fixed;
-   
     background-size: cover;
-
-
- 
 }
 .paralax2{
     /* width: 100%; */
@@ -103,17 +96,13 @@ h2{
 }
  
 
- #d figure{
-        
+ #d figure{    
         margin: 50px 20px 60px;
-      
-   
     }
     
 #d figure figcaption p{
         margin:20px 5px;
-        text-align: justify;
-        
+        text-align: justify;  
     }
 #d figure img{
     float: left;
