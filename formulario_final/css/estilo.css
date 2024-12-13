@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#sec {
+  width: 400px;
+  background-color: aquamarine;
+  padding: 0px 30px 30px;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  /* background-color: yellow; */
+  padding: 10px;
+}
+
+#m {
+  width: 350px;
+  background-color: orange;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: black 10px 10px 20px ;
+}
+#m label {
+  display: inline-block;
+  width: 150px;
+}
+#m label, input{
+    margin-bottom: 8px;
+}
+#sec main form {
+  padding: 10px;
+}
+#b{
+   text-align: center;
+    /* background-color: aqua; */
+}
+#m button {
+  width: 70px;
+  padding: 2px 5px;
+  cursor: pointer;
+  
+}

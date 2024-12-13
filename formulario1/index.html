@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+          <legend>DATOS PERSONALES</legend>
+          <label for="fnombre">Nombre del propietario:</label><br>
+          <input type="text" id="fnombre" name="fnombre" value="ESCRIBE MAYÚSCULAS"><br>
+          <label for="telefono">Dime tu teléfono:</label><br>
+          <input type="number" id="telefono" name="telefono" value=""><br>
+          <label for="correo">Dime tu correo electrónico</label><br>
+          <input type="email" id="correo" name="correo" value="">
+          <!-- <input type="submit" value="Submit"> -->
+        </fieldset>
+        <fieldset>
+            <legend>DATOS DEL VEHICULO</legend>
+            <label for="coches">Selecciona tu vehículo</label><br>
+            <select name="coches" id="">
+                <option value="mazda">MAZDA</option>
+                <option selected value="lexus">LEXUS</option>
+                <option value="toyota">TOYOTA</option>
+                <option value="hyundai">HYUNDAI</option>
+            </select><br>
+            <label for="año">De qué año es:</label><br>
+            <input type="date">
+        </fieldset>
+        <input type="submit" value="Enviar">
+      </form>
+</body>
+</html>

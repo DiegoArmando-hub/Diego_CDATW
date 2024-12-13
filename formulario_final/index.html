@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_Final</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <section id="sec">
+        <h2>Envío de datos</h2>
+        <main id="m">
+            <form action="">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" value="" placeholder="Juan" required><br>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" value="" placeholder="Perez" required><br>
+                <label for="año">Fecha nac</label>
+                <input type="date"><br>
+                <label for="edad">Edad</label>
+                <input type="edad" type="number"><br>
+                <label for="cp">Código postal</label>
+                <input type="cp" type="cp"><br>
+
+                <label for="dni">DNI</label>
+                <input type="text" name="dni" id="dni" readonly><br>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" name="correo" id="correo" placeholder="correo@dominio.com"><br>
+                <label for="web">Página web</label>
+                <input type="url" name="web" id="url"><br>
+
+                <label for="pais">País</label>
+                <select name="pais" id="pais">
+                    <option selected value="esp">España</option>
+                    <option value="ec">Ecuador</option>
+                    <option value="pr">Peru</option>
+                </select><br>
+                <div id="b">
+                    <button type="submit">Enviar</button>
+                </div>
+
+            </form>
+        </main>
+
+    </section>
+</body>
+
+</html>
