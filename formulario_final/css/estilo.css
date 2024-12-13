@@ -20,11 +20,14 @@ h2 {
   margin: auto;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: black 10px 10px 20px ;
+  adow: black 10px 10px 20px ;
 }
 #m label {
   display: inline-block;
   width: 150px;
+}
+#m input{
+    width: 170px;
 }
 #m label, input{
     margin-bottom: 8px;
