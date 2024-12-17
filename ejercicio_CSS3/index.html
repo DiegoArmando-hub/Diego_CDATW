@@ -1,22 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio CSS</title>
 </head>
+
 <body>
     <main>
-        <h1>Aprovecha  estos días de descuento.</h1>
+        <h1>Aprovecha estos días de descuento.</h1>
         <fieldset>
             <legend>DATOS PERSONALES</legend>
+            <label for="Nombre">Nombre <span>*</span></label>
+            <input type="text" name="nombres" id="nombres" placeholder="Escribe aquí tu nombre"><br>
+            <label for="apellidos">Apellidos <span>*</span></label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Escribe aquí tu apellido"><br>
+            <label for="tel">Telefono <span>*</span></label>
+            <input type="number" name="tel" id="tel"><br>
+            <label for="correo">Email <span>*</span></label>
+            <input type="email" name="correo" id="correo" placeholder="Ej.:correo@dominio.com">
+
         </fieldset>
         <fieldset>
             <legend>ENCARGAR EL ZAPATO</legend>
+            <label for="modelo">Elige tu modelo: </label>
+            <!-- <select name="modelo" id="modelo">
+                <option value="plano">Plano</option>
+                <option selected value="tacon">Tacon</option>
+                <option value="fiesta">Fiesta</option>
+            </select><br> -->
+
+            <input list="modelos" name="modelo">
+            <datalist id="modelos">
+                <option value="Tacon">
+                <option value="Plano">
+                <option value="Fiesta">
+            </datalist>
+            <label for="color">Elige el color:</label>
+            <input type="color" name="colores" id="color">
+            <br>
+            <label for="entrega">Fecha de entrega:</label>
+            <input type="date" name="entrega" id="entrega">
+            <label for="hora">Hora de entrega:</label>
+            <input type="time" name="hora" id="hora">
+
+            <!-- <input list="modelo" name="modelo">
+            <datalist id="modelo">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+              </datalist> -->
         </fieldset>
         <fieldset>
             <legend>FORMA DE PAGO</legend>
+            <label for="pago">Forma de pago:</label>
+            <input type="radio" name="f_pago" id="pago">Efectivo
+            <input type="radio" name="f_pago" id="pago">Tarjeta <br>
+            <label for="cuenta">Datos de la cuenta:</label>
+            <input type="text" name="d_cuenta" id="cuenta">
         </fieldset>
     </main>
 </body>
+
 </html>
