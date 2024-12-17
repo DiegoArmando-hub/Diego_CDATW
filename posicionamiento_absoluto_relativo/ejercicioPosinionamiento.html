@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Posicionamiento</title>
+    <style>
+      
+        main{
+           /* width: 500px; */
+            border: 2px solid;
+            /* padding: 1em; */
+        }
+        .p_absoluto{
+            border: 2px solid red;
+            padding: 1em;
+            margin: 1em 0 1em 4em;
+            width: 300px;
+            /* position: relative; */
+        }
+        .p_absoluto img{
+            width: 120px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .p_relativo{
+            border: 2px solid red;
+            padding: 1em;
+            margin: 1em 0 1em 4em;
+            width: 300px;
+            /* position: relative; */
+        }
+        .p_relativo img{
+            width: 120px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="p_absoluto">
+            <img src="images/caja.jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, aspernatur delectus, cum ipsam quis quae sint aperiam repellat vero vel sit suscipit autem possimus unde tempora perferendis accusantium molestiae voluptas!</p>
+        </div>
+
+        <div class="p_relativo">
+            <img src="images/caja.jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, aspernatur delectus, cum ipsam quis quae sint aperiam repellat vero vel sit suscipit autem possimus unde tempora perferendis accusantium molestiae voluptas!</p>
+        </div>
+    </main>
+</body>
+</html>

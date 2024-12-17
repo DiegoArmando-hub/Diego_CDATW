@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamaño fuente con em y rem</title>
+    <style>
+        html {
+            font-size: 10pt;
+        }
+
+        div {
+            font-size: 1.5em;/*em depende de todas las cajasç
+            em es una medida relativa que va a depender de todos los contenedores en lo que está... Ejemplo si un texto está dentro de una caja 1, esta a su vez dentro de una caja 2 y esta a su vez
+            la medida del texto dependera de las que le haya dado a cada una de ellas
+            caja 1 es 1.5em, caja 2 es 2em y caja 3 es 2 em.
+            Si el elemento padre es 10px. 
+            Entonces el texto tendria 60px pero si lo hacemos con rem solo se veria afectado por el tamaño de la caja1, por lo que seria 15px */
+        }
+
+        strong {
+
+            font-size: 2rem;/*rem depende solo del elemento padre*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Ejemplo de uso del tamaño de fuente en <strong> em Strong dentro del div</strong>
+    </div>
+    <strong>Strong fuera del div</strong>
+</body>
+
+</html>
