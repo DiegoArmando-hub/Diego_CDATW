@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../images/tacon.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 45% cover;
+}
+main {
+  /* background-size: cover; revisar */
+  width: 800px;
+  margin: auto;
+}
+fieldset {
+  margin: 20px;
+  background-color: rgba(8, 8, 8, 0.3);
+}
+legend {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+input:focus {
+  background-color: rgba(252, 26, 26, 0.1);
+  border: 2px rgba(0, 0, 0, 1) solid;
+}
+h2 {
+  text-align: center;
+}
+label {
+  display: inline-block;
+  width: 170px;
+  padding: 5px 20px;
+}
+span{
+    color: red;
+}
+input {
+  width: 250px;
+  margin-bottom: 5px;
+}
+input[type="color"],
+input[type="radio"],
+select {
+  width: 50px;
+}
+input[type="time"],
+select {
+  width: 80px;
+}
+.env {
+  margin: 0px 20px;
+  background-color: red;
+  font-weight: bold;
+  /* padding: 5px; */
+  background-image: url(../images/taco_b.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 150px;
+  background-size: 40px;
+  background-position: left;
+  text-align: center;
+  border-radius: 5px;
+}
+.b_rest {
+  width: 100px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+div {
+  position: absolute;
+  top: 150px;
+  z-index: -1;
+  overflow: hidden;
+  transform: rotate(-20deg);
+}
