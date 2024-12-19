@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Flex</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main class="container">
+        <form action="" method="get">
+            <label class="name" for="name">Nombre <span>*</span></label>
+            <input class="inputNombre" type="text" name="name" id="name" placeholder="Albert Einstein" required>
+            <label class="telf" for="telf">Teléfono <span>*</span></label>
+            <input class="inputTelef" type="text" id="telf" name="telf" placeholder="55555555555" required>
+            <label class="email hidden" for="e">Email</label>
+            <input class="inputEmail hidden" type="email" placeholder="emai@email.com" name="e" id="e">
+            <label class="ta hiddenT" for="ta">Mensaje</label>
+            <textarea class="inputTextarea hiddenT" name="textarea" id="ta" cols="30" rows="5" placeholder="Cuentanos un poco sobre ti..."></textarea>
+            <label class="cursos" for="cursos">Cursos</label>
+            <select class="cursos-select" name="cursos" id="cursos">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JAVASCRIPT</option>
+            </select>
+            <div class="submit">
+                <button type="submit">Enviar</button>
+            </div>
+            <!--  -->
+        </form>
+    </main>
+</body>
+</html>

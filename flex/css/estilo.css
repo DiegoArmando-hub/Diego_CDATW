@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+.contenedor{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row-reverse;
+    /* flex-flow: row-reverse wrap; */
+    
+    /* flex-wrap: row wrap; */
+    height: 200px;
+    /* justify-content: center; *//*alineacion horizontal*/
+    /*align-items: center;*/ /*alineacion vertical*/
+    /*align-content:baseline ;*//*trabaja simila al "justify-content:" en vertical*/
+    /*elementos flexibles borde y tamaño*/
+    /* flex-grow: ; */
+    margin: 20px auto;
+    padding: 10px;
+    width: 60%;
+}
+.contenedor div{
+    background-color: red;
+    border: 1px solid black;
+    height: 50px;
+}
