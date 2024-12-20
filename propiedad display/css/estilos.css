@@ -1,0 +1,24 @@
+h1, div, p{
+    border: 3px solid blueviolet;
+    text-align: center;
+    color: cornflowerblue;
+    padding: 10px;
+    /* display: ; */
+}
+span{
+    border: 1px solid black;
+}
+a{
+    display: block;
+}
+li{
+    display: inline;
+}
+/* para ocultar usamos display: none; */
+h1{
+    display: none;
+}
+/* para  ocultar elementos pero que se respeten los espacios usamos la propiedad visibility:hidden; */
+p{
+    visibility: hidden;
+}
