@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <h1>Formularios en HTML</h1>
+    <!-- otro metodo para no validar es agregar dentro del form la propiedad novalidate -->
+
+    <!-- atributos del formulario: 
+     action="mi servidor" , 
+     method="POST" o "GET", 
+     target para indicar si la respuesta se cargue en la misma ventata, pestaña target:"_blank(se despliega en otra ventana o pestaña), "_self(default y se muestra en la misma ventana )""    
+     autocomplete="on" o "off" si queremos que se autocomplete los valores de los text en base a los valores ingresados anteriormente-->
+    <form action="mi_Servidor" method="get">
+        <fieldset>
+            <legend>Datos persona</legend>
+            <!-- para validaciones: para indicar que el campo sea requerido agregamos el atributo required  -->
+
+            <!-- si queremos que el usuario no pueda editar e ingresar datos en el text usamos el parametro redonly 
+             
+            adicional otro parametro puede ser disabled="true" con esto veremos el text desabilitado pero hay que tener cuidado ya que al estar en este estado no se va a enviar al servidor este campo-->
+            <label for="idPersona">Id Persona:</label>
+            <input type="text" name="idPersona" id="idPersona" value="12" readonly="true" >
+            <br><br>
+
+            <input type="hidden" id="sistema" name="sistema" value="SAP">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Esribe tu nombre" required><br><br>
+
+
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required> <br><br>
+            <!-- <label for="password">Password</label>
+        <input type="password" name="password" id="password" required><br><br> -->
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email"> <br><br>
+
+            <!-- para permitir que ingrese valores con . decimal ejem: 25.5 agregamos el atributo step="any" -->
+            <label for="edad">Edad: </label>
+            <input type="number" name="edad" id="edad" step="any"> <br><br>
+
+            <!-- si queremos que permita elegir una sola opcion entre las opciones radio agregadas debemos poner el mismo nombre en el atributo name en este caso pusimos genero -->
+            <label>Genero: </label> <br>
+            <input type="radio" name="genero" id="femenino" value="femenino">
+            <label for="femenino">Femenino</label><br>
+            <input type="radio" name="genero" id="masculino" value="masculino">
+            <label for="masculino">Masculino</label>
+            <br><br>
+
+            <label>Género Música Favorita</label><br>
+            <input type="checkbox" id="clasica" name="musica" value="clasica">
+            <label for="clasica">Clásica</label><br>
+            <input type="checkbox" name="musica" id="rock" value="rock">
+            <label for="rock">Rock</label><br>
+            <input type="checkbox" name="musica" id="pop" value="pop">
+            <label for="pop">Pop</label>
+            <br><br>
+
+            <label for="autos">Marca de autos favorita:</label><br>
+            <!-- para permitir seleccionar mas de una opcion agregamos el atributo multiple="true" dentro del select -->
+            <select name="autos" id="autos" multiple="true">
+                <option value="volvo">Volvo</option>
+                <option value="hyundai">hyundai</option>
+                <option value="bmw">BMW</option>
+                <!-- con el atributo selected indicamos que el primer valor que se va a a seleccionar es Audi  -->
+                <option value="audi" selected>Audi</option>
+            </select>
+
+            <br><br>
+            <label for="comentario">Comentario:</label><br>
+            <textarea name="comentario" id="comentario" rows="3" cols="30">Este es un comentario</textarea>
+            <br><br>
+
+
+            <input type="submit" value="Enviar">
+
+
+            <!-- enviar sin validacion desde un boton -->
+            <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar">
+
+            <input type="reset" value="Restablecer">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

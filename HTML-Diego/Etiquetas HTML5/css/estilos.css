@@ -1,0 +1,46 @@
+header {
+  color: #f72585;
+  font-size: 20px;
+  text-align: center;
+}
+nav {
+  width: 20%;
+  float: left;
+}
+nav a {
+  background-color: #f71570;
+  border-radius: 10px 0 10px 0;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+
+}
+section {
+  float: right;
+  width: 75%;
+  color: #7209b7;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  box-shadow:1px 0 4px rgb(0,0,0,0.2) ; /*agregar una sombra al rededor de la etiqueta*/
+  margin-bottom: 15px;
+  padding: 15px;
+}
+aside{
+    float: right;
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    font-style: italic;
+    color: #4361ee;
+    box-shadow: inset 5px 0 5px -5px #4895ef;/*agregar una sombra a lado izquierdo, la sombra para ponerlo de lado interno con la propiedad "inset" 5px en el eje X, 0 en el eje Y, 5px para el blur=difuminar y -5px para spread=propagar */
+}
+footer{
+    clear: both;/*para que los elementos flotados ya no le aplique en el footer y entonces este elemento rompe con los elementos flotados y se posiciona en la siguiente linea */
+    padding: 1px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+}

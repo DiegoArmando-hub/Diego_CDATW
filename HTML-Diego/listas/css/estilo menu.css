@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: rgb(13, 13, 150);
+}
+ul{
+    /* estilo de la lista en este caso le damos el valor de none */
+    list-style-type: none;
+    background-color: rgb(20, 148, 148);
+    /* overflow: esta propiedad se usa para mostrar */
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+   
+    /* padding: 10px; */
+}
+li{
+
+    display: inline-block;
+   
+    /* float: left; */
+}
+li a{
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    
+}
+li a:hover{
+    background-color: rgb(5, 83, 83);
+}

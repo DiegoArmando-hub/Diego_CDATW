@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+div.estatico{
+    position: static;/*esta opcion es por default podemos quitarla*/
+    top:10px; /*al agregar estos parametros cuando la posicion es estatica no va afectar*/
+    padding: 15px;
+    border: 3px solid greenyellow;
+    background-color: whitesmoke;
+}
+div.relativo{
+    position: relative;
+    top: 10px; /*la posicion al ponerla en relativa vamos a observar que top  y left de 10px si se va a ver reflejada*/
+    left: 10px;
+    padding: 15px;
+    /* border: 3px solid blueviolet; */
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow:  3px 3px red,
+    -1em 0 0.4em olive;/**tambien se puede agregar varios shadows separados por comas*/
+}
+div.absoluto{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    right: 0;
+    padding: 5px;
+    border: 3px solid cornflowerblue;
+    background-color: whitesmoke;
+}

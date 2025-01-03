@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+div.contenedor{
+    position: relative;
+    border: 3px dashed greenyellow;
+    width: 50%;
+    margin:auto
+}
+img.imagen{
+    width: 100%; /*para que ocupe todo el ancho del contenedor*/
+    opacity: 0.2; /*por default es 1 es decir la imagen se muestra tal y como es y si le ponemos 0 no se muestra la imagen ya que es el valor minimo en este caso le dimos el valor de .2*/
+    
+}
+
+/* centrar el texto dentro del div */
+div.centro{
+    position: absolute; /*ocupa unicamente el espacio que necesita y no toda la linea*/
+    top:50%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}

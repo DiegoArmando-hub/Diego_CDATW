@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color:#e63046
+}
+div.contenedor{
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /*flex-direction: row;*//*valor por defecto*/
+    /*flex-grap*/
+    /*flex-wrap: nowrap;*/ /*valor por defecto no se van ajustar los elementos*/
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: convinacion de flex-direction con flex-wrap */
+    flex-flow: row wrap;
+    justify-content: center;/*center; alinear los elementos de manera horizontal */
+    background-color: darkmagenta;
+    height: 300px;
+    /* align-items: alinear los elementos en el eje vertical */
+    /* align-items: stretch; por default */
+    align-items: center; /*centra los elementos de manera vertical*/
+    /* align-items: flex-start; */
+    /* align-content:  espacio entre las lineas que tenemos en nuestro flexbox*/
+    align-content: space-evenly;
+}
+div.contenedor p{
+    background-color: #47bef5;
+    /* border: 1px solid ; */
+    color: blanchedalmond;
+    margin: 20px;
+    padding: 20px;
+    font-size: 1.5em;
+}

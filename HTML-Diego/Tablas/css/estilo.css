@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+}
+
+caption{
+    color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    line-height: 70px;
+
+}
+table,th,td{
+    border: 1px solid rgb(87, 1, 1);
+    /* para que no se vea doble linea al ingresar parametros para el borde usamos la propiedad border-collapse: collapse; */
+    border-collapse: collapse;
+    padding: 5px;
+}
+/* td{
+    text-align: center;
+}*/
+th{
+    color: rgb(220, 210, 230);
+    background-color: rgb(2, 2, 163) ;
+} 
+/* funcion CSS :nth-child(even)  even= par y odd=impar // para seleccionar ya sea los reglones pares o impares */
+tr:nth-child(even){
+    background-color: aquamarine;
+}
+/* cambiar color de los reglones impares */
+tr:nth-child(odd){
+    background-color: blueviolet;
+    color: white;
+}
