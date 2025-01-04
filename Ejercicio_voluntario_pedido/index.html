@@ -26,44 +26,49 @@
 
                 </figure>
             </article>
-        
+
             <form action="">
                 <fieldset>
                     <legend>Ramos</legend>
                     <input type="radio" name="color rosas" id="rojas" value="rosas rojas">
-                    <label for="rojas">Rosas rojas</label>
+                    <label class="label_radio" for="rojas">Rosas rojas</label>
                     <input type="radio" name="color rosas" id="rosas" value="rosas rosas">
-                    <label for="rosas">Rosas rosas</label>
+                    <label class="label_radio" for="rosas">Rosas rosas</label>
                     <input type="radio" name="color rosas" id="amarillas" value="rosas amarillas">
-                    <label for="amarillas">Rosas amarillas</label><br>
+                    <label class="label_radio" for="amarillas">Rosas amarillas</label><br>
                     <input type="radio" name="color rosas" id="blancas" value="rosas blancas">
-                    <label for="blancas">Rosas blancas</label>
+                    <label class="label_radio" for="blancas">Rosas blancas</label>
                     <input type="radio" name="color rosas" id="multicolor" value="rosas multicolor">
-                    <label for="multicolor">Rosas multicolor</label><br><br>
+                    <label class="label_radio" for="multicolor">Rosas multicolor</label><br><br>
 
-                    <label for="">Elige el color de la tarjeta y los complementos que deseas añadir:</label><br><br>
+                    <p>Elige el color de la tarjeta y los complementos que deseas añadir:</p><br>
                     <input type="color" name="color" id="color">
-                    <input type="checkbox" name="tarjeta" id="tarjeta">
-                    <label for="tarjeta">Tarjeta</label>
+                    <input type="checkbox" name="tarjeta_compl" id="tarjeta_compl">
+                    <label class="label_checkbox" for="tarjeta_compl">Tarjeta</label>
                     <input type="checkbox" name="jarron" id="jarron">
-                    <label for="jarron">Jarron</label>
+                    <label class="label_checkbox" for="jarron">Jarron</label>
                     <input type="checkbox" name="cesta" id="cesta">
-                    <label for="cesta">Cesta</label><br><br>
+                    <label class="label_checkbox" for="cesta">Cesta</label><br><br>
 
                     <label for="dedicatoria">Escribe una dedicatoria:</label><br>
-                    <textarea name="dedicatoria" id="dedicatoria" rows="3" cols="35"></textarea>
-                    <label>(Max.250 carecteres)</label>
+                    <textarea name="dedicatoria" id="dedicatoria" rows="3" cols="35" style="width: 90%;"></textarea><br>
+                    <p>(Max.250 carecteres)</p>
                 </fieldset>
                 <fieldset>
                     <legend>Tus datos</legend>
-                    <label for="nombre">Nombre: </label><br>
-                    <input type="text" name="nombre" id="nombre"><br>
-                    <label for="apellido">Apellido: </label><br>
-                    <input type="text" name="apellido" id="apellido"><br>
-                    <label for="telefono">Telefono: </label><br>
-                    <input type="tel" name="telefono" id="telefono"><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" name="email" id="email" placeholder="ej:nombre@mail.com">
+                    <label for="nombre_from">Nombre: </label><br>
+                    <input class="txt_tus_datos" type="text" name="nombre_from" id="nombre_from"><br>
+                    <label for="apellido_from">Apellido: </label><br>
+                    <input class="txt_tus_datos" type="text" name="apellido_from" id="apellido_from"><br>
+                    <div class="telefono">
+                        <label for="telefono">Telefono: </label><br>
+                        <input type="tel" name="telefono" id="telefono"><br>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input class="txt_email" type="email" name="email" id="email" placeholder="ej:nombre@mail.com"
+                            autocomplete="email">
+                    </div>
 
                 </fieldset>
                 <fieldset>
@@ -88,6 +93,16 @@
                         <option value="tarde">Tarde</option>
                     </select>
                 </fieldset>
+                <fieldset>
+                    <legend>Pago</legend>
+                    <p>Elije la forma de pago:</p>
+                    <input type="radio" name="pago" id="paypal">
+                    <label for="paypal">Paypal</label>
+                    <input type="radio" name="pago" id="tarjeta">
+                    <label for="tarjeta">Tarjetas</label>
+                </fieldset>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
             </form>
         </section>
         <footer>
