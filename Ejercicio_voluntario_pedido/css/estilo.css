@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    /*  Aprovechamos que en CSS3 podemos usar varias imágenes de fondo para convertir la imagen en una falsa escala de grises usando 
+    linear-gradient y background-blend-mode: saturation; 
+    opcional------- después le aplicamos por encima color con una sombra interna usando box-shadow. */
+    background-image: linear-gradient(black, black), url(../images/margaritas-semillas.jpg);
+    background-blend-mode: saturation;
+    /* box-shadow: inset 0px 0px 3000px 3000px rgba(2, 34, 58, 0.6); */
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    padding: 20px 30px;
+  
+    
+    
+}
+header{
+    margin: auto;
+    background-color: rgba(0, 0, 0,.6);
+    color: white;
+    width: 600px;
+   
+}
+header> h1{
+    margin: 20px 0;
+    text-align: center;
+}
+section{
+    display: flex;
+    background-color: rgba(0, 0, 0,.6);
+    width: 600px;
+    margin: auto;
+}
+section article{
+    width: 300px;
+    background-color: white;
+    margin: 5px;
+}
+section article figcaption{
+text-align: center;
+}
+section figure img{
+width: 100%;
+
+}
+form{
+    width: 300px;
+    margin: 5px;
+    color: white;
+}
