@@ -54,6 +54,8 @@
                     <textarea name="dedicatoria" id="dedicatoria" rows="3" cols="35" style="width: 90%;"></textarea><br>
                     <p>(Max.250 carecteres)</p>
                 </fieldset>
+
+                <!-- Tus datos -->
                 <fieldset>
                     <legend>Tus datos</legend>
                     <label for="nombre_from">Nombre: </label><br>
@@ -69,29 +71,66 @@
                         <input class="txt_email" type="email" name="email" id="email" placeholder="ej:nombre@mail.com"
                             autocomplete="email">
                     </div>
-
                 </fieldset>
+
+                <!-- Entregar a  -->
+
                 <fieldset>
+
                     <legend>Entregar a</legend>
-                    <label for="nombre">Nombre: </label><br>
-                    <input type="text" name="nombre" id="nombre"><br>
-                    <label for="apellido">Apellido: </label><br>
-                    <input type="text" name="apellido" id="apellido"><br>
-                    <label for="direccion">Dirección de envío: </label><br>
-                    <input type="text" name="direccion" id="direccion"><br>
-                    <label for="postal">Código posta: </label><br>
-                    <input type="text" name="postal" id="postal"><br>
-                    <label for="poblacion">Población:</label><br>
-                    <input type="text" name="poblacion" id="poblacion"><br>
-                    <label for="provincia">Provincia: </label><br>
-                    <input type="text" name="provincia" id="provincia"><br>
-                    <label for="entrega">Fecha de entrega:</label><br>
-                    <input type="date" name="entrega" id="entrega"><br>
-                    <label for="horario">Horario de entrega:</label><br>
-                    <select name="horario" id="horario">
-                        <option value="mañana">Mañana</option>
-                        <option value="tarde">Tarde</option>
-                    </select>
+                    <div class="contenedor_entrega">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" id="nombre">
+                        <label for="apellido">Apellido: </label>
+                        <input type="text" class="txt_sec_entrega" name="apellido" id="apellido">
+
+                        <div class="env_postal">
+                            <div class="direccion">
+                                <label for="direccion">Dirección de envío: </label><br>
+                                <input type="text" name="direccion" id="direccion">
+                            </div>
+                            <div class="postal">
+                                <label for="postal">Código postal: </label><br>
+                                <input type="text" name="postal" id="postal">
+                            </div>
+                            <!-- <div class="postal"> -->
+
+
+                            <!-- </div> -->
+
+                        </div>
+
+
+
+                        <div class="pobla_prov">
+                            <div class="poblacion">
+                                <label for="poblacion">Población:</label><br>
+                                <input type="text" name="poblacion" id="poblacion"><br>
+                            </div>
+                            <div class="provincia">
+                                <label for="provincia">Provincia: </label><br>
+                                <input type="text" name="provincia" id="provincia"><br>
+                            </div>
+                        </div>
+
+                        <div class="fecha_horario">
+                            <div class="entrega">
+                                <label for="entrega">Fecha de entrega:</label><br>
+                                <input type="date" name="entrega" id="entrega"><br>
+                            </div>
+                            <div class="horario">
+                                <label for="horario">Horario de entrega:</label><br>
+                                <select name="horario" id="horario"><br>
+                                    <option value="mañana">Mañana</option>
+                                    <option value="tarde">Tarde</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+
+
+
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Pago</legend>

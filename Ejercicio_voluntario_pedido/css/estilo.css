@@ -61,20 +61,61 @@ fieldset .label_radio {
   width: 28%;
 }
 fieldset .label_checkbox {
-    display: inline-block;
-    width: 15%;
-  }
-  /* Seccion Tus datos */
-fieldset .txt_tus_datos{
-    width: 75%;
+  display: inline-block;
+  width: 15%;
 }
-.telefono{
-    float: left;
-    padding-right: 20px;
+/* Seccion Tus datos */
+fieldset .txt_tus_datos {
+  width: 75%;
 }
-.txt_email{
-    width: 45%;
+.telefono {
+  float: left;
+  padding-right: 20px;
 }
+.txt_email {
+  width: 45%;
+}
+/* formato Entregar a  */
+.contenedor_entrega {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  /* align-items: flex-start;  */
+}
+.contenedor_entrega input[type="text"] {
+  /* flex-basis: 60%; */
+  width: 60%;
+}
+
+/* .postal {
+  position: absolute;
+  left: 70%;
+  top:33%;
+} */
+.contenedor_entrega .env_postal {
+  display: flex;
+}
+.contenedor_entrega .pobla_prov{
+  display: flex;
+}
+.contenedor_entrega .fecha_horario{
+  display: flex;
+}
+/* .poblacion, .provincia, .entrega, .horario{
+padding-top: 2px;
+ width:  60%;
+}
+
+ .provincia{
+  position: absolute;
+  left: 45%;
+  top:57%;
+ }
+ .horario{
+  position: absolute;
+  left: 30%;
+  top:80%;
+ } */
 
 input[type="submit"],
 input[type="reset"] {
