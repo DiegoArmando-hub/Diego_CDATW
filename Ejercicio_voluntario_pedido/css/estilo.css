@@ -14,14 +14,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 20px 30px;
+  padding: 20px 0;
 }
 /* contenedor=main principal aplicar display:flex; */
 main {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   /* flex-wrap: wrap; */
-  width: 70%;
+  width: 60%;
   margin: auto;
   color: white;
 }
@@ -30,13 +30,16 @@ main {
 section {
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
+  flex-flow: row wrap;
   margin: 15px 0;
   width: 100%;
 }
-/* formato para sección de la izquierda imagen ramo */
+/* --------------------formato para sección de la izquierda imagen ramo--------- */
 section article {
-  width: 50%;
+  width: 47%;
   background-color: white;
+  display: flex;
+  flex-flow: column wrap;
   color: black;
   margin: 10px;
 }
@@ -46,84 +49,140 @@ section article figcaption {
 section figure img {
   width: 100%;
 }
-/* formato para el formulario */
+/*-------------------------------- formato para el formulario------------------- */
 section form {
   width: 50%;
-  margin: 5px;
-  padding-right: 5px;
+  /* margin: 5px; */
+  /* padding-right: 5px; */
 }
-fieldset {
-  padding: 10px;
+fieldset{
+  padding-left: 10px;
 }
-/* seccion Ramos */
-fieldset .label_radio {
-  display: inline-block;
-  width: 28%;
+span{
+  font-family: "Playwrite IS", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+
 }
-fieldset .label_checkbox {
-  display: inline-block;
-  width: 15%;
-}
-/* Seccion Tus datos */
-fieldset .txt_tus_datos {
-  width: 75%;
-}
-.telefono {
-  float: left;
-  padding-right: 20px;
-}
-.txt_email {
-  width: 45%;
-}
-/* formato Entregar a  */
-.contenedor_entrega {
-  position: relative;
+/* -------------------------------------seccion Ramos -----------------------------*/
+.ramos{
   display: flex;
   flex-flow: column wrap;
-  /* align-items: flex-start;  */
 }
-.contenedor_entrega input[type="text"] {
-  /* flex-basis: 60%; */
+.rosas{
+  display: flex;
+  flex-flow: row wrap;
+
+}
+.rosas > div{
+  width: 140px;
+}
+.complementos{
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 5%;
+}
+
+/* --------------------------Seccion Tus datos---------------- */
+
+.datos{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.datos input[type=text]{
+  width: 70%;
+}
+.tel_email{
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 5%;
+  width: 100%;
+}
+.telefono {
+width: 30%;
+}
+.email {
+ width: 50%;
+}
+.telefono input[type=tel]{
+  width: 100%;
+} 
+.email input[type=email]{
+  width: 100%;
+} 
+/*--------------------- formato Entregar a  -----------------------*/
+.contenedor_entrega {
+  display: flex;
+  flex-flow: column wrap;
+}
+.contenedor_entrega input[type=text]{
+  width: 60%;
+}
+.contenedor_entrega .env_postal {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 5%;
+}
+
+.direccion{
+  flex-basis: 60%;
+}
+.postal{
+  flex-basis: 30%;
+}
+.direccion input[type=text]{
+  width: 100%;
+} 
+.postal input[type=text]{
   width: 60%;
 }
 
-/* .postal {
-  position: absolute;
-  left: 70%;
-  top:33%;
-} */
-.contenedor_entrega .env_postal {
+.pobla_prov , .fecha_horario{
   display: flex;
-}
-.contenedor_entrega .pobla_prov{
-  display: flex;
-}
-.contenedor_entrega .fecha_horario{
-  display: flex;
-}
-/* .poblacion, .provincia, .entrega, .horario{
-padding-top: 2px;
- width:  60%;
+  flex-flow: row wrap;
+  column-gap: 5%; 
 }
 
- .provincia{
-  position: absolute;
-  left: 45%;
-  top:57%;
- }
- .horario{
-  position: absolute;
-  left: 30%;
-  top:80%;
- } */
+.poblacion, .provincia{
+  width: 30%;
+}
+.poblacion input[type="text"], .provincia input[type="text"] {
+  width: 100%;
+}
+
+.entrega, .hora{
+  width: 30%;
+}
+
+.fecha_horario input[type=date], .fecha_horario select{
+  width: 100%;
+}
+
+/* ---------------------------forma de pago ---------------*/
+
+.fpago{
+  display: flex;
+  column-gap: 15px;
+}
+
+
+/* -----------------------botones enviar y reset------------- */
+
+.botones{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
 
 input[type="submit"],
 input[type="reset"] {
-  /* margin: auto; */
-  padding: 5px;
-  margin: 15px;
+  padding: 10px;
+  /* margin: 15px; */
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 input[type="submit"]:hover {
   background-color: #45a049;
@@ -132,7 +191,8 @@ input[type="reset"]:hover {
   background-color: rgba(190, 25, 58, 0.89);
 }
 
-/* formato para header y footer */
+
+/*----------------- formato para header y footer ------------------------*/
 header,
 footer {
   margin: auto;
@@ -144,8 +204,13 @@ footer {
 header > h1 {
   margin: 10px 0;
   text-align: center;
+  font-family: "Playwrite IS", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 footer p {
-  margin: 10px 0;
+  margin: 10px ;
   text-align: right;
+  vertical-align: sub;
 }

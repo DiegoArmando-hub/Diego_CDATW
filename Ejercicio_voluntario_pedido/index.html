@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flores a domicilio</title>
     <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&family=Rochester&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,6 +19,7 @@
         </header>
         <section>
             <article>
+
                 <figure>
                     <img src="images/ramo.jpg" alt="">
                     <figcaption>
@@ -29,60 +34,93 @@
 
             <form action="">
                 <fieldset>
-                    <legend>Ramos</legend>
-                    <input type="radio" name="color rosas" id="rojas" value="rosas rojas">
-                    <label class="label_radio" for="rojas">Rosas rojas</label>
-                    <input type="radio" name="color rosas" id="rosas" value="rosas rosas">
-                    <label class="label_radio" for="rosas">Rosas rosas</label>
-                    <input type="radio" name="color rosas" id="amarillas" value="rosas amarillas">
-                    <label class="label_radio" for="amarillas">Rosas amarillas</label><br>
-                    <input type="radio" name="color rosas" id="blancas" value="rosas blancas">
-                    <label class="label_radio" for="blancas">Rosas blancas</label>
-                    <input type="radio" name="color rosas" id="multicolor" value="rosas multicolor">
-                    <label class="label_radio" for="multicolor">Rosas multicolor</label><br><br>
+                    <legend><span>Ramo</span></legend>
+                    <div class="ramos">
+                        <div class="rosas">
+                            <div class="rojas">
+                                <input type="radio" name="color rosas" id="rojas" value="rosas rojas">
+                                <label for="rojas">Rosas rojas</label>
+                            </div>
+                            <div class="frosas">
+                                <input type="radio" name="color rosas" id="rosas" value="rosas rosas">
+                                <label for="rosas">Rosas rosas</label>
+                            </div>
+                            <div class="amarillas">
+                                <input type="radio" name="color rosas" id="amarillas" value="rosas amarillas">
+                                <label for="amarillas">Rosas amarillas</label><br>
+                            </div>
+                            <div class="blancas">
+                                <input type="radio" name="color rosas" id="blancas" value="rosas blancas">
+                                <label for="blancas">Rosas blancas</label>
+                            </div>
+                            <div class="multicolor">
+                                <input type="radio" name="color rosas" id="multicolor" value="rosas multicolor">
+                                <label for="multicolor">Rosas multicolor</label><br><br>
+                            </div>
 
-                    <p>Elige el color de la tarjeta y los complementos que deseas añadir:</p><br>
-                    <input type="color" name="color" id="color">
-                    <input type="checkbox" name="tarjeta_compl" id="tarjeta_compl">
-                    <label class="label_checkbox" for="tarjeta_compl">Tarjeta</label>
-                    <input type="checkbox" name="jarron" id="jarron">
-                    <label class="label_checkbox" for="jarron">Jarron</label>
-                    <input type="checkbox" name="cesta" id="cesta">
-                    <label class="label_checkbox" for="cesta">Cesta</label><br><br>
+                        </div>
+
+
+                        <p>Elige el color de la tarjeta y los complementos que deseas añadir:</p><br>
+                        <div class="complementos">
+                            <div class="color">
+                                <input type="color" name="color" id="color">
+                            </div>
+                            <div class="tarj">
+                                <input type="checkbox" name="tarjeta_compl" id="tarjeta_compl">
+                                <label class="label_checkbox" for="tarjeta_compl">Tarjeta</label>
+                            </div>
+                            <div class="jarron">
+                                <input type="checkbox" name="jarron" id="jarron">
+                                <label class="label_checkbox" for="jarron">Jarron</label>
+                            </div>
+                            <div class="cesta">
+                                <input type="checkbox" name="cesta" id="cesta">
+                                <label class="label_checkbox" for="cesta">Cesta</label><br>
+                            </div>
+                        </div>
+
+                    </div>
 
                     <label for="dedicatoria">Escribe una dedicatoria:</label><br>
                     <textarea name="dedicatoria" id="dedicatoria" rows="3" cols="35" style="width: 90%;"></textarea><br>
                     <p>(Max.250 carecteres)</p>
                 </fieldset>
 
-                <!-- Tus datos -->
+                <!------------------------------- Tus datos----------------- -->
                 <fieldset>
-                    <legend>Tus datos</legend>
-                    <label for="nombre_from">Nombre: </label><br>
-                    <input class="txt_tus_datos" type="text" name="nombre_from" id="nombre_from"><br>
-                    <label for="apellido_from">Apellido: </label><br>
-                    <input class="txt_tus_datos" type="text" name="apellido_from" id="apellido_from"><br>
-                    <div class="telefono">
-                        <label for="telefono">Telefono: </label><br>
-                        <input type="tel" name="telefono" id="telefono"><br>
+                    <legend><span>Tus datos</span></legend>
+                    <div class="datos">
+                        <label for="nombre_from">Nombre: </label>
+                        <input type="text" name="nombre_from" id="nombre_from">
+                        <label for="apellido_from">Apellido: </label>
+                        <input type="text" name="apellido_from" id="apellido_from">
+                        <div class="tel_email">
+                            <div class="telefono">
+                                <label for="telefono">Telefono: </label><br>
+                                <input type="tel" name="telefono" id="telefono">
+                            </div>
+                            <div class="email">
+                                <label for="email">Email:</label><br>
+                                <input class="txt_email" type="email" name="email" id="email"
+                                    placeholder="ej:nombre@mail.com" autocomplete="email">
+                            </div>
+                        </div>
+
                     </div>
-                    <div>
-                        <label for="email">Email:</label><br>
-                        <input class="txt_email" type="email" name="email" id="email" placeholder="ej:nombre@mail.com"
-                            autocomplete="email">
-                    </div>
+
                 </fieldset>
 
-                <!-- Entregar a  -->
+                <!-- ------------------------------------Entregar a --------------------- -->
 
                 <fieldset>
 
-                    <legend>Entregar a</legend>
+                    <legend><span>Entregar a</span></legend>
                     <div class="contenedor_entrega">
                         <label for="nombre">Nombre: </label>
                         <input type="text" name="nombre" id="nombre">
                         <label for="apellido">Apellido: </label>
-                        <input type="text" class="txt_sec_entrega" name="apellido" id="apellido">
+                        <input type="text" name="apellido" id="apellido">
 
                         <div class="env_postal">
                             <div class="direccion">
@@ -93,14 +131,7 @@
                                 <label for="postal">Código postal: </label><br>
                                 <input type="text" name="postal" id="postal">
                             </div>
-                            <!-- <div class="postal"> -->
-
-
-                            <!-- </div> -->
-
                         </div>
-
-
 
                         <div class="pobla_prov">
                             <div class="poblacion">
@@ -115,33 +146,41 @@
 
                         <div class="fecha_horario">
                             <div class="entrega">
-                                <label for="entrega">Fecha de entrega:</label><br>
-                                <input type="date" name="entrega" id="entrega"><br>
+                                <label for="entrega">Fecha de entrega:</label>
+                                <input type="date" name="entrega" id="entrega">
                             </div>
-                            <div class="horario">
-                                <label for="horario">Horario de entrega:</label><br>
-                                <select name="horario" id="horario"><br>
+                            <div class="hora">
+                                <label for="horario">Horario de entrega:</label>
+                                <select name="horario" id="horario">
                                     <option value="mañana">Mañana</option>
                                     <option value="tarde">Tarde</option>
                                 </select>
                             </div>
                         </div>
-                        
-
-
-
                     </div>
                 </fieldset>
+                <!-- -----------------FORMA DE PAGO-------------- -->
                 <fieldset>
-                    <legend>Pago</legend>
-                    <p>Elije la forma de pago:</p>
-                    <input type="radio" name="pago" id="paypal">
-                    <label for="paypal">Paypal</label>
-                    <input type="radio" name="pago" id="tarjeta">
-                    <label for="tarjeta">Tarjetas</label>
+                    <legend><span>Pago</span></legend>
+                    <div class="fpago">
+                        <p>Elije la forma de pago:</p>
+                        <div class="paypal">
+                            <input type="radio" name="pago" id="paypal">
+                            <label for="paypal">Paypal</label>
+                        </div>
+                        <div class="tarj">
+                            <input type="radio" name="pago" id="tarjeta">
+                            <label for="tarjeta">Tarjeta</label>
+                        </div>
+
+                    </div>
+
                 </fieldset>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
+                <div class="botones">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+
             </form>
         </section>
         <footer>

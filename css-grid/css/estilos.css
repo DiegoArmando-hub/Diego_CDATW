@@ -1,0 +1,116 @@
+section{
+    background-color: green;
+    padding: 10px;
+
+    display: grid;
+    /* crear dos columnas una de 100 y la otra de 2000 */
+    /* grid-template-columns: 100px 200px; */
+    /* para crear filas usamos grid-template-rows */
+    /* grid-template-rows: 100px 50px 200px; */
+
+    /* para crear filas y columnas usamos la propiedad abreviada grid-template 
+    los primeros valores son para las filas luego separamos por un "/" y damos los valores de las columnas*/
+    /* grid-template: repeat(2, 100px) / repeat(3, 1fr) 50px; */
+    /* al conbinar columnas o filas se van crear nuevos espacios estos tendran un ancho de 50px */
+    /* grid-auto-rows: 50px;
+    grid-auto-columns:1fr; */
+
+    /* con la opcion gap(espacio entre filas y columnas), para crear espacios solo entre filas usamos row-gap:10px; y para crer espacio ente columnas usamos column-gap */
+    gap:10px;
+/* --lo que hace la propiedad grid-auto-flow es indicar que cuando se necesite crear un nuevo elemento este sea fila(row) o columna(column) de acuerdo a lo que tengamos parametrizado--------- se puede adicionar el parametro de "dense" esto lo que va hacer es rellenar espacios vacios con elementos que quepan----- por default tiene el valor de row */
+    /* grid-auto-flow: row dense; */
+
+
+    /* para crear mi template de una manera más ágil */
+   /* grid-template-areas: 
+    "caja1 caja2  "
+    "caja3 caja4 "
+    "caja5 caja5";*/
+height: 400px;
+    /* si necesitamos crear el area con dimenciones usamos la propiedar grid-template */
+grid-template:
+"caja5 caja5" 50px /*50px ancho de la fila*/
+"caja3 caja4" 100px
+"caja2 caja1" 100px
+/* para colocar el ancho de las columnas colocamos "/" luego los valores*/
+/1fr 1fr;
+
+/* alinear cuadriculas de forma vertical */
+/* align-content: center; 
+align-content: space-evenly;*/ /*space-around / space-between/ center/ end/ space-evenly*/
+
+/* para alinear de forma horizontal */
+/*justify-content: space-around;/*por defecto center*//*center/end/space-between/space-evenly */
+
+
+/* podemos unir las dos propiedades  usamos la propiedad place-content: center center; el primer valor es de align-content y el segundo de justify-content*/
+/* place-content: center center; */
+
+/* align-items: center; alinear elementos de forma vertical */
+/* justify-items: end;alinear elementos de forma horizontal */
+/* de igual manera podemos usar estas dos propiedades unificadas con la propiedad place-items:center center donde el primer valor es para align-items y la segunada para justify-items;/  */
+place-items: end center;
+/* podemor usar los valores de min-content , max- content al momento de crear columnas con grid-template-column */
+}
+
+
+/* para que ademas de crear podamos dar el tamaño de las filas y columnas podemos usar */
+
+    
+    
+div{
+    background-color: red;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+}
+/* dar un ancho al primer div del grid */
+div:first-child{
+    /* width: 200px; */
+    /* grid-column: 1/3; */
+    /* grid-row: 1/3; */
+    
+}
+/* para seleccionar el último elemento del div */
+div:last-child{
+    /* grid-column: 3/5; */
+    /* otra manera que puede ser es usando span 2 */
+/* grid-column: span 2;
+grid-row: span 2; */
+}
+
+/* para posicionar un elemento en lugar de otro con div:nth-child(3){} aquí decidimos mover el elemento 3 a la posición del elemento 2 */
+/* div:nth-child(3){
+    grid-column: 1 /2;
+    grid-row:1/2;
+} */
+
+/* otra manera mas rapida de mover un elemnto es con grid-area:1/1 lo que estamos pidiendo aquí es que el elemento se mueva a la fila 1, columna 1 ------- aquí podemos usar 4 valores entoces luego de 1/1 agregamos /2/2 esto indica que va hasta la fila 2, columna 2 entoces estos segundos valores indica donde termina de */
+
+/* div:nth-child(5){
+    grid-area: 1/1/2/2;
+} */
+
+/* para nombrar a las areas usamos la propiedad grid-area: nombre_elemento; */
+div:first-child{
+    grid-area:caja1;
+}
+
+div:nth-child(2){
+    grid-area:caja2;
+}
+div:nth-child(3){
+    grid-area:caja3;
+}
+div:nth-child(4){
+    grid-area: caja4;
+}
+div:last-child{
+    grid-area:caja5;
+    /* podemos cambiar las alineaciones de un elemento con las propiedades */
+    /* align-self: start; */
+    /* justify-self: start;aquí unicamente modificamos la alineacion vertical y horizontal de este elemento */
+
+    /* podemos unificar estas dos propiedades */
+    place-self: start center; /*cuando ponermos un solo valor se aplica a los dos el mismo*/
+}
