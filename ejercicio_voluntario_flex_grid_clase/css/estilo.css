@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../images/803938-flower-wallpaper.jpg) no-repeat fixed;
+    background-size: cover;
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+    letter-spacing: 0.03em;/*16px por 0.03*/
+}
+
+header,section,footer{
+    width: 1250px;
+    border: 7px solid transparent;
+    background-color: rgba(0, 0, 0,0.7);
+}
+header{
+    height: 90px;
+    margin: 30px auto 0;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.6em;
+    color: #FFF;
+    font-weight: 100;
+}
+section{
+    height: 1050px;
+    margin: 20px auto;
+}
+footer{
+height: 20px;
+margin: 0 auto;
+color: white;
+font-size: 0.8em;
+text-align: right;
+padding: 10px;
+
+}
+figure{
+    width: 50%;
+    height: 950px;
+    background-color: #FFF;
+    float: left;
+    padding-top: 100px;
+    text-align: center;
+}
+figure h2{
+    font-size: 1.8em;
+    padding-top: 30px;
+}
+figure p{
+    font-size: 1em;
+}
+figure img#flores{
+    width: 440px;
+    height: 440px;
+}
+form{
+    width: 50%;
+    height: 1050px;
+    color: white;
+    float: left;
+}
+form p{
+    font-size: 0.8em;
+}
+fieldset{
+    margin: 10px 10px 0;
+    padding: 5px 10px 10px;
+}
+legend{
+    font-size: 1.4em;
+    font-family:'Pacifico', cursive;
+    color:#FFF;
+}
+.uno div{
+    width: 140px;
+}
+.uno{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+}
+.dos{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+#datos label, #entrega label{
+  display: block;
+  margin-top: 8px;  
+}
+#datos div label{
+    width: 35%;
+}
+#datos div{
+    display: flex;
+}
+
+.fin input{
+    margin-left: 20px;
+}
+
+#entrega div{
+    display: flex;
+    height: 160px;
+    width: 95%;
+    flex-wrap: wrap;
+}
+#entrega div label{
+    margin-right: 25px;
+}
+
+#entrega div input, #entrega div select{
+    display: block;
+}
+.botones{
+    width: 150px;
+    margin:20px auto ;
+}
+#botones input{
+    padding: 3px 10px;
+    margin: 0 5px;
+}
+span{
+color:red;
+font-weight: 600px;
+}

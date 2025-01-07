@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   /*  Aprovechamos que en CSS3 podemos usar varias imágenes de fondo para convertir la imagen en una falsa escala de grises usando 

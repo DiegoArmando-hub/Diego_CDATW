@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Flex - GRID</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Flores a domicilio</h1>
+    </header>
+    <section>
+        <figure>
+            <img src="images/rosas_rojas.jpg" alt="flores rojas" name="flores" id="flores">
+            <figcaption>
+                <h2>Tu pedido</h2>
+                <p>Todas nuestras flores y plantas son confeccionados en el día de la entrega.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum harum maiores dolore amet nulla laborum
+                    saepe, placeat similique exercitationem aspernatur adipisci tempora esse explicabo, nisi sequi, sint
+                    dolorum officia dicta?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt soluta ipsa maxime dolores iusto
+                    aspernatur neque ipsum veniam exercitationem nihil optio repudiandae voluptatibus assumenda
+                    obcaecati facere, magni mollitia consequuntur consequatur.</p>
+            </figcaption>
+        </figure>
+
+        <form action="#" method="post">
+            <fieldset id="ramo">
+                <legend>Ramo</legend>
+                <div class="uno">
+                    <div>
+                        <input type="radio" name="ramo" id="rojas" checked>Rosas rojas
+                    </div>
+                    <div>
+                        <input type="radio" name="ramo" id="rosas">Rosas rosas
+                    </div>
+                    <div>
+                        <input type="radio" name="ramo" id="" amarillas>Rosas amarillas
+                    </div>
+                    <div>
+                        <input type="radio" name="ramo" id="blancas">Rosas blancas
+                    </div>
+                    <div>
+                        <input type="radio" name="ramo" id="multicolor">Rosas multicolor
+                    </div>
+                </div>
+                <label>Elige el color de la tarjeta y los complementos que deseas adquirir</label>
+                <div class="dos">
+                    <div>
+                        <input type="color" name="color" id="color">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="mensaje" id="mensaje" checked> Tarjeta
+                    </div>
+                    <div>
+                        <input type="checkbox" name="jarron" id="jarron">Jarron
+                    </div>
+                    <div>
+                        <input type="checkbox" name="cesta" id="cesta">Cesta
+                    </div>
+                </div>
+                <label for="dedicatoria">Escribe una dedicatoria: </label>
+                <textarea name="dedicatoria" id="dedicatoria" cols="62" rows="5" maxlength="250"></textarea>
+                <p>(Max. 250 caracteres)</p>
+            </fieldset>
+            <fieldset id="datos">
+                <legend>Tus datos</legend>
+                <label for="nombre">Nombre: <span>*</span></label>
+                <input type="text" name="nombre" id="nombre" size="50" required>
+                <label for="apellidos">Apellidos: <span>*</span></label>
+                <input type="text" name="apellidos" id="apellidos" size="50" required>
+                <div>
+                    <label for="telefono">Telefono: <span>*</span>
+                        <input type="tel" name="telefono" id="telefono" pattern="[0-9]{9} required">
+                    </label>
+                    <label for="email">Email:
+                        <input type="email" name="email" id="email" size="30" placeholder="Ej: nombre@tuemail.com">
+                    </label>
+                </div>
+
+            </fieldset>
+            <fieldset id="entrega">
+                <legend>Entregar a</legend>
+                <label for="nombreb">Nombre: <span>*</span></label>
+                <input type="text" name="nombreb" id="nombreb" size="40" required>
+                <label for="apellidosb">Apellidos: <span>*</span></label>
+                <input type="text" name="apellidosb" id="apellidosb" size="40" required>
+
+                <div>
+                    <label for="direccion">Dirección de envío: <span>*</span>
+                        <input type="text" name="direccion" id="direccion" size="40" required>
+                    </label>
+                    <label for="postal">Código postal: <span>*</span>
+                        <input type="text" name="postal" id="postal" size="10" pattern="[0-9]{5}" required>
+                    </label>
+                    <label for="poblacion">Población: <span>*</span>
+                        <input type="text" name="poblacion" id="poblacion" size="20" required>
+                    </label>
+                    <label for="provincia">Provincia: <span>*</span>
+                        <input type="text" name="provincia" id="provincia" size="20" required>
+                    </label>
+                    <label for="fecha" class="tres">Fecha de entrega: <span>*</span>
+                        <input type="date" name="fecha" id="fecha" required>
+                    </label>
+                    <label for="horario" class="cuatro">Horario de entrega:
+                        <select name="horario" id="horario">
+                            <option value="mañana">Mañanas</option>
+                            <option value="tarde">Tarde</option>
+                        </select>
+                    </label>
+                </div>
+
+            </fieldset>
+            <fieldset id="pago">
+                <legend>Pago</legend>
+                <div class="fin">
+                    <label>Elige la forma de pago:</label>
+                    <input type="radio" name="pagar" id="paypal">Paypal
+                    <input type="radio" name="pagar" id="tarjetas">Tarjeta
+                </div>
+            </fieldset>
+            <div class="botones">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>
+            Diego Armando
+        </p>
+    </footer>
+</body>
+
+</html>
