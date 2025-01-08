@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <!-- ejercicio cambio imagenes edades personas -->
+     <img id="img_p" src="images/bebe.jpg" style="width: 200px;" alt="">
+     <p >Este eres tu en el año <span id="año" style="color: blue;background-color: aqua;">1990</span></p>
+   
+     <button onclick="document.getElementById('img_p').src='images/bebe.jpg';document.getElementById('año').innerHTML='1990'">1990</button>
+     <button onclick="document.getElementById('img_p').src='images/joven.jpg';document.getElementById('año').innerHTML='2020'">2020</button>
+  
+     <br><br>
+     
+     <hr>
+    <!-- ejercicio con cambio de imagenes ejemplo encendido bombilla -->
+    <p>ejercicio para encender bombilla</p>
+    <button onclick="document.getElementById('imagen').src='images/bombilla_on.gif'">encender</button>
+    <img id="imagen" src="images/bombilla_off.gif" style="width: 100px;" alt="">
+    <button onclick="document.getElementById('imagen').src='images/bombilla_off.gif'">apaga</button>
+
+    <hr>
+    <p>ejercicio actualización de hora luego de dar clic</p>
+    <button onclick="document.getElementById('fecha1').innerHTML=Date()">Actualiza la fecha</button>
+    <p id="fecha1">24 de marzo 2020</p>
+    <hr>
+    <!-- vizualizar hora -->
+    <p>Ejercicio vizualizar hora</p>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Pulsa para vizualizar la fecha y hora</button>
+    <p id="demo"></p>
+    <hr>
+    <p>ejercicio mostrar nombre en un parrafo "<span>p</span>" </p>
+    <button onclick="document.getElementById('nombre').innerHTML='Diego Armando'">Como se llama el
+        desarrollador</button>
+    <p id="nombre"></p>
+</body>
+
+</html>
