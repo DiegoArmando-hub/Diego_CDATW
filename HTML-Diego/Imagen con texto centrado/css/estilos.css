@@ -11,6 +11,7 @@ div.contenedor{
 img.imagen{
     width: 100%; /*para que ocupe todo el ancho del contenedor*/
     opacity: 0.2; /*por default es 1 es decir la imagen se muestra tal y como es y si le ponemos 0 no se muestra la imagen ya que es el valor minimo en este caso le dimos el valor de .2*/
+    /* background-color: blue; */
     
 }
 
@@ -21,4 +22,5 @@ div.centro{
     width: 100%;
     text-align: center;
     font-size: 25px;
+    background-color: aqua;
 }

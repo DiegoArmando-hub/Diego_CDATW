@@ -7,25 +7,39 @@
     <title>Document</title>
 
     <style>
-        main{
-            background-color: antiquewhite;
+        section {
+            background-color: blueviolet;
+            /* position: relative; */
+            /* border: 3px dashed greenyellow; */
+            border: 3px solid brown;
+            width: 50%;
             height: 500px;
-            
-        }
-        figure{
             margin: auto;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        figure {
+            /* margin: auto; */
+            
+            /* background-color: aqua; */
             text-align: center;
         }
 
+     
+        
     </style>
     <script>
-        function encender(){
-            document.getElementById('imagen').src='images/turnOn_.png';
-            document.main.style.backgroundColor='orange';
+        function encender() {
+            document.getElementById('imagen').src = 'images/turnOn_.png';
+            document.getElementById("cuerpo").style.background="yellow";
             // main.style.background='orange';
         }
-        function apagar(){
-
+        function apagar() {
+            document.getElementById('imagen').src='images/turnOff_.png';
+            document.getElementById('cuerpo').style.backgroundColor="black";
         }
     </script>
 </head>
@@ -33,18 +47,25 @@
 
 <body>
 
-    <p id="elemento" onmouseover="this.style.borderColor='black';" onmouseout="this.style.background='orange'">este es un parrafo</p>
-
-
-    
-    <main>
+    <!-- <p id="elemento" onmouseover="this.style.borderColor='black';" onmouseout="this.style.background='orange'">este es
+        un parrafo</p> -->
         <p>ejercicio para encender bombilla</p>
-        <figure>
-            <img onclick=encender() id="imagen" src="images/turnOff_.png" width="100px">
-        </figure>
-        <button onclick="document.getElementById('imagen').src='images/bombilla_on.gif',this.style.background='orange'">encender</button>
+
+
+    <main>
+        <section id="cuerpo">
+          
+            <!-- <div> -->
+            <figure>
+                <img onclick=encender() ondblclick="apagar()" id="imagen" src="images/turnOff_.png" width="100px">
+            </figure>
+        </section>
+       
+        <!-- </div> -->
+
+        <!-- <button onclick="document.getElementById('imagen').src='images/bombilla_on.gif',this.style.background='orange'">encender</button>
         
-        <button onclick="document.getElementById('imagen').src='images/bombilla_off.gif'">apaga</button>
+        <button onclick="document.getElementById('imagen').src='images/bombilla_off.gif'">apaga</button> -->
     </main>
 
 </body>

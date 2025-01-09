@@ -6,21 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function numeros() {
-            let num1 = prompt("Dime el primer número");
-            let num2 = prompt("Dime el segundo número")
+        // function numeros() {
+        //     let num1 = prompt("Dime el primer número");
+        //     let num2 = prompt("Dime el segundo número")
+        //     document.getElementById("numeros").innerHTML = "Has ingresado los numeros " + num1 + " y " + num2;
+        //     function multiplicar(a, b) {
+        //         return a * b;
+        //     }
+        //     let result = multiplicar(num1, num2);
+        //     document.getElementById("resultado").innerHTML ="El resultado es: " + result;
+        // }
 
 
-            document.getElementById("numeros").innerHTML = "Has ingresado los numeros " + num1 + " " + num2;
-        }
-
-
-        function multiplicar(a, b) {
+        function multiplicar(a,b) {
+            let a = prompt("Dime el primer número");
+            let b = prompt("Dime el segundo número")
             return a * b;
+            
+            
         }
+        document.getElementById("numeros").innerHTML = "Has ingresado los numeros " + a + " y " + b;
+        let result = multiplicar(num1, num2);
+            document.getElementById("resultado").innerHTML = "El resultado es: " + result;
 
-        let x = multiplicar(5, 6);
-        document.getElementById("resultado").innerHTML = x;
+
 
 
 
@@ -30,22 +39,9 @@
 <body>
     <button onclick=numeros()>Iniciar</button>
     <p id="numeros"></p>
-    <!-- <button onclick=multiplicar(num1,num2)>multiplicar</button> -->
+
     <p id="resultado"></p>
-
-
-    <!-- <p id="demo"></p>
-
-    <script>
-        function myFunction(p1, p2) {
-            return p1 * p2;
-        }
-
-        let result = myFunction(4, 3);
-        document.getElementById("demo").innerHTML = result;
-    </script> -->
-
-
+    
 </body>
 
 </html>
