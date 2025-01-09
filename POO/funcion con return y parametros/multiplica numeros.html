@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function numeros() {
+            let num1 = prompt("Dime el primer número");
+            let num2 = prompt("Dime el segundo número")
+
+
+            document.getElementById("numeros").innerHTML = "Has ingresado los numeros " + num1 + " " + num2;
+        }
+
+
+        function multiplicar(a, b) {
+            return a * b;
+        }
+
+        let x = multiplicar(5, 6);
+        document.getElementById("resultado").innerHTML = x;
+
+
+
+    </script>
+</head>
+
+<body>
+    <button onclick=numeros()>Iniciar</button>
+    <p id="numeros"></p>
+    <!-- <button onclick=multiplicar(num1,num2)>multiplicar</button> -->
+    <p id="resultado"></p>
+
+
+    <!-- <p id="demo"></p>
+
+    <script>
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+
+        let result = myFunction(4, 3);
+        document.getElementById("demo").innerHTML = result;
+    </script> -->
+
+
+</body>
+
+</html>

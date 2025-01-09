@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        main{
+            background-color: antiquewhite;
+            height: 500px;
+            
+        }
+        figure{
+            margin: auto;
+            text-align: center;
+        }
+
+    </style>
+    <script>
+        function encender(){
+            document.getElementById('imagen').src='images/turnOn_.png';
+            document.main.style.backgroundColor='orange';
+            // main.style.background='orange';
+        }
+        function apagar(){
+
+        }
+    </script>
+</head>
+
+
+<body>
+
+    <p id="elemento" onmouseover="this.style.borderColor='black';" onmouseout="this.style.background='orange'">este es un parrafo</p>
+
+
+    
+    <main>
+        <p>ejercicio para encender bombilla</p>
+        <figure>
+            <img onclick=encender() id="imagen" src="images/turnOff_.png" width="100px">
+        </figure>
+        <button onclick="document.getElementById('imagen').src='images/bombilla_on.gif',this.style.background='orange'">encender</button>
+        
+        <button onclick="document.getElementById('imagen').src='images/bombilla_off.gif'">apaga</button>
+    </main>
+
+</body>
+
+</html>

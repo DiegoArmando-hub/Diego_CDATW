@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO Cambio color borde div</title>
+    <style>
+        div{
+            border: 3px solid orange;
+            width: 250px;
+            height: 50px;
+            /* text-align: center ; */
+            margin: 10px;
+            margin-inline: auto;
+            /* display: -webkit-box;
+            overflow: hidden; */
+            
+            
+        }
+        p{
+            border: 2px solid red;
+            margin: 5px;
+        }
+    </style>
+    <script>
+        function cambioEstilo()
+        {
+            
+        }
+    </script>
+</head>
+<body>
+    <div id="elemento" onmouseover="this.style.borderColor='black';" onmouseout="this.style.borderColor='orange'">
+    <p id="elemento" onmouseover="this.style.borderColor='black';" onmouseout="this.style.borderColor='orange'">este es un parrafo</p>
+    Contenido div
+    </div>
+    <div id="elemento1" onmouseover="this.style.borderColor='blue';" onmouseout="this.style.borderColor='orange'">Contenido div1</div>
+    
+
+    <!-- otro metodo mismo resultado -->
+    <div id="elemento2" onmouseover="document.getElementById('elemento2').style.borderColor='gray';" onmouseout="document.getElementById('elemento2').style.borderColor='orange'">Contenido div2 estilo con metodo documet.geElementById('')</div>
+
+    <!-- mismo ejercicio con una funcion -->
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            margin: 10px;
+            width: 250px;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        
+        // let nombre=prompt("Dime tu nombre");
+        // function bienvenida(n){
+        //     alert("Bienvenid@ "+ n);
+        // }
+        function estilo1(elemento){
+            elemento.style.borderColor='green';
+        }
+        function estilo2(elemento){
+            elemento.style.borderColor='orange';
+        }
+    </script>
+</head>
+<body>
+    <!-- <button onclick="bienvenida(nombre);">Pulsa para entrar</button> -->
+     <div id="elemento" onmouseover="estilo1(this);" onmouseout="estilo2(this);">
+        contenido div
+     </div>
+</body>
+</html>
