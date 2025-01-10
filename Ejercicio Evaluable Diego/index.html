@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <style>
+        main {
+            border: 3px solid rgb(250, 131, 20);
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            border: 3px solid;
+            width: 500px;
+            height: 300px;
+        }
+
+        p {
+            display: none;
+            width: 500px;
+            height: 300px;
+            padding: 50px 20px 10px;
+            font-size: 30px;
+            border: 3px solid red;
+            text-align: justify;
+            text-justify: inter-word;
+            font-family: "Alegreya", serif;
+            font-optical-sizing: auto;
+            font-weight: lighter;
+            font-style: normal;
+        }
+
+        span {
+            font-family: "Alegreya", serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: cursive;
+        }
+    </style>
+    <script>
+        function filtro() {
+            document.getElementById("imagen").style.filter = "grayscale(100%)";
+        }
+        function sinFiltro() {
+            document.getElementById("imagen").style.filter = "none";
+        }
+
+        function pedirDatos() {
+            let nombre = prompt("¿Cual es tu nombre?");
+            let curso = prompt("¿Cual es tu curso que te interesa?");
+            let telefono = prompt("Digita tu número telefonico")
+
+            // function ocultarImagen(){
+
+            // }
+
+            // document.getElementById("datos").innerHTML = "Hola " + nombre + " , " + "has elegido el curso de: " + curso + " , cuando se habiliten las plazas se te comunicara al telefono " + telefono + " GRACIAS";
+            document.getElementById("nombre").innerHTML = nombre;
+            document.getElementById("curso").innerHTML = curso;
+            document.getElementById("telefono").innerHTML = telefono;
+
+            document.getElementById("fig").style.display = "none";
+            document.getElementById("datos").style.display = "block";
+            // document.getElementById("datos").style.border = "3px solid";
+            document.getElementById("datos").style.backgroundColor = "orange";
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <figure id="fig">
+            <img onclick="pedirDatos()" onmouseover="filtro()" onmouseout="sinFiltro()" id="imagen"
+                src="images/desarrollo web.png" alt="Imagen lenguages">
+        </figure>
+        <p id="datos">
+
+            Hola <span id="nombre"></span>, has elegido el curso de: <span id="curso"></span>, cuando se habiliten las
+            plazas se te comunicara al telefono <span id="telefono"></span>.<br><br>
+            GRACIAS
+        </p>
+    </main>
+</body>
+
+</html>

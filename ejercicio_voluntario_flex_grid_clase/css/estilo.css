@@ -78,16 +78,18 @@ legend{
 .uno div{
     width: 140px;
 }
+
+/* al div llamado "uno" configuramos el display=flex para que sus elementos internos se ajusten horizontalmente y adicional se configura el flex-wrap: wrap para que  */
 .uno{
     padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* al configurar el display en flex, por default los elementos internos se alinean horzontalmente*/
+    flex-wrap: wrap;/*se aplica para que los elementos internos se ajusten automaticamente en el caso de que la dimención que el elemento padre re redusca*/
     height: 60px;
 }
 .dos{
     width: 60%;
-    display: flex;
-    justify-content: space-around;
+    display: flex;/*alinea los elementos internos horizontalmente(en fila) por default */
+    justify-content: space-around;/*crea un espacio al rededor de los elementos flexibles*/
     margin: 20px 0;
 }
 #datos label, #entrega label{
@@ -106,11 +108,11 @@ legend{
 }
 
 #entrega div{
-    display: flex;
+    display: flex;/*al configurar el display en flex los elementos internos se alinen horizontalmente*/
     height: 160px;
     width: 95%;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap; /*para que se los elementos hijos se ajusten si es necesario en el caso de que no hay suficiente espacion*/
+   
 #entrega div label{
     margin-right: 25px;
 }
