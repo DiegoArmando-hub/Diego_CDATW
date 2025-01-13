@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            width: 300px;
+            background-color: aqua;
+            border: 2px solid;
+            margin: auto;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .operaciones {
+            text-align: center;
+        }
+
+        span {
+            background-color: burlywood;
+        }
+    </style>
+    <script>
+        let resultado;
+
+        function sumar(n1, n2) {
+            resultado = parseInt(n1) + parseInt(n2);
+            // alert("El resultado de la suma es: "+resultado)
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+        function restar(n1, n2) {
+            resultado = parseInt(n1) - parseInt(n2);
+            // alert("El resultado de la resta es: "+resultado)
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+        function multiplicar(n1, n2) {
+            resultado = parseInt(n1) * parseInt(n2);
+            // alert("El resultado de la multiplicación es: "+resultado)
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+        function dividir(n1, n2) {
+
+            if (parseInt(n1) != 0 && parseInt(n2) != 0) {
+                resultado = parseInt(n1) / parseInt(n2);
+                // alert("El resultado de la división es: "+resultado)
+                document.getElementById("resultado").innerHTML = resultado;
+            }else{
+                alert("No se puede hacer una divición con 0, cambie el valor!!")
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>CALCULADORA</h1>
+        <form action="">
+            <div class="num">
+                <label>Escribe un número</label><br>
+                <input type="number" name="numero1" id="numero1"><br>
+                <label>Escribe el segundo número</label><br>
+                <input type="number" name="numero2" id="numero2"><br><br>
+
+            </div>
+            <div class="operaciones">
+                <input type="button" class="bloque" value="sumar" onclick="sumar(numero1.value,numero2.value)">
+                <input type="button" class="bloque" value="restar" onclick="restar(numero1.value,numero2.value)">
+                <input type="button" class="bloque" value="multiplicar"
+                    onclick="multiplicar(numero1.value,numero2.value)">
+                <input type="button" class="bloque" value="dividir" onclick="dividir(numero1.value,numero2.value)">
+            </div>
+
+
+        </form>
+
+        <p>
+            El resultado es: <span id="resultado"></span>
+        </p>
+    </main>
+
+</body>
+
+</html>
