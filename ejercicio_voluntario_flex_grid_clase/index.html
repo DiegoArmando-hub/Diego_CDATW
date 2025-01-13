@@ -13,6 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Pacifico&display=swap"
         rel="stylesheet">
 
+    <script src="js/script.js"></script>
+
 </head>
 
 <body>
@@ -21,7 +23,7 @@
     </header>
     <section>
         <figure>
-            <img src="images/rosas_rojas.jpg" alt="flores rojas" name="flores" id="flores">
+            <img src="images/rosas_rojas.jpg" alt="flores" name="flores" id="flores">
             <figcaption>
                 <h2>Tu pedido</h2>
                 <p>Todas nuestras flores y plantas son confeccionados en el día de la entrega.</p>
@@ -42,16 +44,16 @@
                         <input type="radio" name="ramo" id="rojas" checked>Rosas rojas
                     </div>
                     <div>
-                        <input type="radio" name="ramo" id="rosas">Rosas rosas
+                        <input type="radio" name="ramo" id="rosas" onclick=frosas()>Rosas rosas
                     </div>
                     <div>
-                        <input type="radio" name="ramo" id="" amarillas>Rosas amarillas
+                        <input type="radio" name="ramo" id="amarillas" onclick="famarillas()">Rosas amarillas
                     </div>
                     <div>
-                        <input type="radio" name="ramo" id="blancas">Rosas blancas
+                        <input type="radio" name="ramo" id="blancas" onclick="fblancas()">Rosas blancas
                     </div>
                     <div>
-                        <input type="radio" name="ramo" id="multicolor">Rosas multicolor
+                        <input type="radio" name="ramo" id="multicolor" onclick="fmulticolor()">Rosas multicolor
                     </div>
                 </div>
                 <label>Elige el color de la tarjeta y los complementos que deseas adquirir</label>

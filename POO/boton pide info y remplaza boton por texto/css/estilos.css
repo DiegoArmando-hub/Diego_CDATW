@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    
+}
+table{
+    width: 500px;
+    border: 2px solid;
+    /* display: flex; */
+    border-collapse: collapse;
+    background-color: aquamarine;
+    text-align: center;
+    margin: auto;
+
+}
+td{
+    border: 2px solid;
+    padding: 20px;
+}
+button{
+    padding: 5px;
+}
