@@ -1,0 +1,20 @@
+.contenedor{
+    height: 500px;
+    border: 2px solid black;
+    margin:25px;
+    margin: 25px;
+    background-color: aquamarine;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;/*align-items= strech; esta es por defecto, los elementos ocupan todo el espacio en el eje vertical, respetando unicamente el margin y padding*/
+}
+.elemento{
+    border: 1px solid;
+    background-color: azure;
+    margin: 20px;
+    padding: 20px;
+    font-size: 36px;
+}
