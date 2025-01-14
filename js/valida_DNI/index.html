@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <script>
+            function validar(a){
+                console.log(a)
+                let pass=a;
+                let patron=/^[A-Z]{1}[0-9]{7}[A-Z]{1}$/;
+                if(patron.test(pass)){
+                    alert("correcto");
+                }
+                else
+                alert("incorrecto");
+            }
+            // let pass=prompt("ingrese la contraseña")
+        </script>
+
+        <form action="">
+            <label for="dni">Ingresa tu DNI:</label>
+            <input type="text" name="doc" id="dni">
+            <button type="button" onclick="validar(doc.value)">Validar</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <script>
+            function validar(a){
+                let pass=a;
+                let patron=/^[a-z 0-9]{5}$/;
+                if(patron.test(pass)){
+                    alert("correcto");
+                }
+                else
+                alert("incorrecto");
+            }
+            // let pass=prompt("ingrese la contraseña")
+        </script>
+
+        <form action="">
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="password" id="pass">
+            <button type="button" onclick="validar(password.value)">Validar</button>
+        </form>
+    </main>
+</body>
+</html>

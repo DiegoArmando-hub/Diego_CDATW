@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+        <script>
+            var notas = new Array(4);
+            notas[0]=prompt("Ingresar la nota de Juan");
+            notas[1]=prompt("Ingresar la nota de Pedro");
+            notas[2]=prompt("Ingresar la nota de Luis");
+            notas[3]=prompt("Ingresar la nota de Oscar");
+
+            var resultado =[];
+            var celda = document.getElementById("not");
+            for (let i=0;i<notas.length;i++){
+                resultado=notas[i];
+                console.log(i);4
+                // celda.innerHTML+= resultado+"<br>";
+                
+            }
+        </script>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>ESTIDIANTE</th>
+            <th>NOTAS</th>
+        </tr>
+        <tr>
+           <td>
+            Juan <br>
+            Pedro <br>
+            Luis <br>
+            Oscar <br>
+           </td>
+           <td id="not"></td>
+  
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="cont">
+
+            <h2>INCENTIVO DE NAVIDAD</h2>
+            <form action="">
+                <div class="datos">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="namer" id="name">
+                    <label for="antg">Años de Antiguedad</label>
+                    <input type="number" name="antg" id="antg">
+                    <button type="button" onclick="verificar(namer.value,antg.value)">Verificar Incentivo</button>
+                </div>
+            </form>
+            <div class="incentivo" id="inc">
+                <p id="nuevo" style="display: none;">
+                    Hola <span id="nombre_nuevo"></span>. Eres empleado nuevo. tienes un Jamón por navidad
+                </p>
+                <p id="veterano" style="display: none;">
+                    Hola <span id="nombre_viejo"></span>.Eres empleado veterano. Tienes una cesta de Ibericos
+                </p>
+                <p id="honor" style="display: none;">
+                    Hola <span id="nombre_viejo"></span>.Eres empleado de honor. Tienes un viaje
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

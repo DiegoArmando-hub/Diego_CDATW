@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cont{
+    border: 2px solid;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+
+}
+.datos{
+    display: flex;
+    flex-flow: column wrap;
+}

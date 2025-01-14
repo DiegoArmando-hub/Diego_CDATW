@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let tel = prompt("Introduce el telenono movil")
+        let patron = /^[67]{1}[0-9]{8}$/;
+        // if(patron.test(tel)==true){
+        if (patron.test(tel)) {
+            alert("número correcto");
+        } else {
+            alert("Número incorrecto");
+        }
+    </script>
+</body>
+
+</html>
