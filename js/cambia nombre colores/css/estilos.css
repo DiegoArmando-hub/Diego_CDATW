@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+}
+div{
+    border: 2px solid ;
+    width: 200px;
+    height: 200px;
+}
+.rojo{
+    background-color: red;
+}
+.naranja{
+    background-color: orange;
+}
+.verde{
+    background-color: green;
+}
+.amarillo{
+    background-color: yellow;
+}
