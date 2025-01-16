@@ -12,8 +12,13 @@
         td {
             border: 1px solid black;
         }
+<<<<<<< HEAD
     </style>
         
+=======
+        </style>
+       
+>>>>>>> bf4160af37c27654c4576d959534e0c1ed19d9b7
 </head>
 
 <body>
@@ -35,7 +40,27 @@
             </td>
         </tr>
     </table>
+<<<<<<< HEAD
 <button type="button" onclick=notas()>Ingresar notas</button>
+=======
+    <script>
+        let notas = new Array(4);
+        notas[0]=prompt("Ingresar la nota de Juan");
+        notas[1]=prompt("Ingresar la nota de Pedro");
+        notas[2]=prompt("Ingresar la nota de Luis");
+        notas[3]=prompt("Ingresar la nota de Oscar");
+
+        // var resultado =[];
+        let celda = document.getElementById("not");
+        for (let i=0;i<notas.length;i++){
+            resultado=notas[i];
+            // console.log(i);
+            // console.log(notas[i]);
+            celda.innerHTML+= resultado+"<br>";
+            
+        }
+    </script>
+>>>>>>> bf4160af37c27654c4576d959534e0c1ed19d9b7
 </body>
 
 </html>

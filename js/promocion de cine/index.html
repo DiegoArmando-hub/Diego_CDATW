@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function validar(d){
+            // let dia=d;
+            // console.log(d);
+            switch(d){
+                case "Lunes":
+                   alert(d+"\nEl precio de la entrada es 5") 
+                break;
+                case "Martes":
+                   alert(d+"\nEl precio de la entrada es 5") 
+                break;
+                case "Miercoles":
+                   alert(d+"\nEl precio de la entrada es 5") 
+                break;
+                case "Jueves":
+                   alert(d+"\nEl precio de la entrada es 5") 
+                break;
+                case "Viernes":
+                   alert(d+"\nEl precio de la entrada es 5") 
+                break;
+               default:
+                alert(d+"\nEste día no hay promoción el precio de la entrada es 10")
+            }
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <form action="#">
+            <label for="dia">¿Que día de la semana vendras?</label>
+            <select name="dias" id="dia">
+                <option value="Lunes">Lunes</option>
+                <option value="Martes">Martes</option>
+                <option value="Miercoles">Miercoles</option>
+                <option value="Jueves">Jueves</option>
+                <option value="Viernes">Viernes</option>
+                <option value="Sabado">Sabado</option>
+                <option value="Domingo">Domingo</option>
+            </select>
+            <button type="button" onclick="validar(dias.value)">Validar</button>
+        </form>
+    </main>
+</body>
+</html>

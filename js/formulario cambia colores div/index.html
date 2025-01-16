@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <style>
+        form{
+            /* display: flex;
+            flex-flow: column wrap;
+            align-content: flex-start; */
+        }
+        .cuadro{
+            width: 500px;
+            border: 2px solid black;
+            height: 300px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr ;
+            /* background-color: blueviolet; */
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+    <main>
+        <form action="#">
+            <label for="color">Elige los colores de las  cajas</label><br>
+            <input type="radio" name="colores" id="color" value="rojo">Rojo, amarillo y azul <br>
+            <input type="radio" name="colores" id="color" value="verde">Verde, violeta y naranja <br>
+            <input type="radio" name="colores" id="color" value="gris">Grises <br>
+            <button type="button" onclick="enviar(colores.value)">Enviar</button>
+            <div class="cuadro" id="caja">
+                <div id="1">Primero</div>
+                <div id="2">Segundo</div>
+                <div id="3">Tercero</div>
+            </div>
+            <button type="button" onclick="cambiar(colores.value)">Cambiar dirección capas</button>
+        </form>
+      
+        
+    </main>
+</body>
+</html>

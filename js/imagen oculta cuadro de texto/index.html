@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            display: flex;
+            column-gap: 5px;
+        }
+
+        picture{
+            flex-basis: 400;
+        }
+        img {
+            width: 400px;
+        }
+
+        div {
+            align-self: center;
+            border: 2px solid black;
+            background-color: gray;
+            color: white;
+            width: 300px;
+            height: 50px;
+     
+            display: none;
+
+
+
+        }
+    </style>
+    <script>
+        function muestra() {
+            document.getElementById("cuadro").style.display = "block";
+        }
+        function oculta() {
+            document.getElementById("cuadro").style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <picture>
+            <img src="img.webp" alt="" onmouseover="muestra()" onmouseout="oculta()">
+        </picture>
+        <div id="cuadro">
+            <p>Texto oculto</p>
+        </div>
+    </main>
+</body>
+
+</html>

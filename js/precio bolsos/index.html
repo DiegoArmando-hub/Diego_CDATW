@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsos</title>
+    <script>
+        function calcular(x, y) {
+            console.log(x, y)
+            switch (x) {
+                case "dalia":
+                case "margarita":
+                case "crisantemo":
+                    if (y == "pequeño") {
+                        alert("10$");
+                    } else if (y == "mediano") {
+                        alert("15$")
+                    } else
+                        alert("30$")
+
+                    break;
+                case "azalea":
+                case "gitamilla":
+                    if (y == "pequeño") {
+                        alert("15$");
+                    } else if (y == "mediano") {
+                        alert("25$")
+                    } else
+                        alert("45$")
+
+                default:
+                    alert("no has elegido ningún bolso")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#">
+            <label for="">ELIGE TU BOLSO</label>
+            <div class="bolsos">
+                <input type="radio" name="bolso" id="" value="dalia"> Dalía
+                <input type="radio" name="bolso" id="" value="margarita">Margarita
+                <input type="radio" name="bolso" id="" value="crisantemo">Crisantemo
+                <input type="radio" name="bolso" id="" value="azalea">Azalea
+                <input type="radio" name="bolso" id="" value="gitamilla">Gitamilla
+            </div>
+            <label for="tam">Elige el tamaño del bolso:</label>
+            <select name="tamaño" id="tam">
+                <option value="pequeño">Pequeño</option>
+                <option value="mediano">Mediano</option>
+                <option value="grande">Grande</option>
+            </select>
+            <button type="button" onclick="calcular(bolso.value,tamaño.value)">Calcular precio</button>
+        </form>
+    </main>
+</body>
+
+</html>

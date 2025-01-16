@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function info() {
+            let jugadores = new Array(5);
+            let can_gol = new Array(5);
+            let nombres = document.getElementById("jugador");
+            let goles = "";
+            let golesmas = "";
+            let golesmenos = "";
+            let i = 0;
+            let n = parseInt(jugadores.length);
+            while (i <= n) {
+                // console.log(n);
+                jugadores[i] = prompt("Ingrese el nombre del jugador " + [i]);
+                console.log(i);
+                console.log(jugadores[i])
+                jug = jugadores[i];
+                // 
+                nombres.innerHTML += jug + "<br>";
+                // console.log(nombres);
+                i++;
+            }
+        }
+
+
+    </script>
+    <p id="jugador"></p>
+    <button type="button" onclick="info()">iniciar</button>
+</body>
+
+</html>

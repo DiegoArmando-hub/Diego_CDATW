@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validar(x){
+            if(isNaN(x) || x<0|| x>10){
+              
+                alert("debe ingresar un valor correcto");
+            }else
+            {
+                document.getElementById("texto").innerHTML="Correcto has igresado un numero valido \n"+x;
+            }
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <form action="#">
+            <label >Ingresa un número</label>
+            <input type="text" name="num" id="numero">
+            <button onclick="validar(num.value)">validar</button>
+        </form>
+        <p id="texto"></p>
+     
+    </main>
+</body>
+</html>

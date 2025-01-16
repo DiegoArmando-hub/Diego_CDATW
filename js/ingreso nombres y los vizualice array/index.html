@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <p>detalle alumnos</p>
+    <p id="nombres"></p>
+    
+    <script>
+        let alumnos = new Array(5);
+        alumnos[0]=prompt("Ingresa el nombre");
+        alumnos[1]=prompt("Ingresa el nombre");
+        alumnos[2]=prompt("Ingresa el nombre");
+        alumnos[3]=prompt("Ingresa el nombre");
+        alumnos[4]=prompt("Ingresa el nombre");
+
+        let detalle =document.getElementById("nombres");
+        for (let i=0;i<=alumnos.length;i++){
+            nombr=alumnos[i];
+
+            detalle.innerHTML+=nombr+"<br>";
+        }
+    </script>
+</body>
+</html>
