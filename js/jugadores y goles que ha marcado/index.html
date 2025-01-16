@@ -9,33 +9,36 @@
 
 <body>
 
+    <p id="jugador"></p>
     <script>
-        function info() {
+        // function info() {
             let jugadores = new Array(5);
             let can_gol = new Array(5);
             let nombres = document.getElementById("jugador");
             let goles = "";
             let golesmas = "";
             let golesmenos = "";
-            let i = 0;
+            let i = 1;
             let n = parseInt(jugadores.length);
             while (i <= n) {
                 // console.log(n);
                 jugadores[i] = prompt("Ingrese el nombre del jugador " + [i]);
+                can_gol[i] = prompt("Ingrese la cantidad de goles del jugador "+ [i] );
                 console.log(i);
                 console.log(jugadores[i])
                 jug = jugadores[i];
+                goles = can_gol[i];
                 // 
-                nombres.innerHTML += jug + "<br>";
+                nombres.innerHTML += "El jugador "+ jug +" ha marcado "+ goles+ "<br>";
                 // console.log(nombres);
                 i++;
             }
-        }
+        // }
 
 
     </script>
-    <p id="jugador"></p>
-    <button type="button" onclick="info()">iniciar</button>
+   
+    <!-- <button type="button" onclick="info()">iniciar</button> -->
 </body>
 
 </html>
