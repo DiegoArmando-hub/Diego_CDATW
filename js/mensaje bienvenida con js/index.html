@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mensaje(n,g){
+            if(g=="hombre"){
+                alert("Bienvenido Sr. "+n)
+            }else{
+                alert("Binvenida Sra. "+n)
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <p>Esta es mi pagina de bienvenida</p>
+        <form action="#">
+            <input type="text" name="nombre" id="nom" placeholder="Ingresa tu nombre">
+            <select name="genero" id="">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select>
+            <button type="button" onclick="mensaje(nombre.value,genero.value)">Púlsame</button>
+        </form>
+    </main>
+</body>
+</html>

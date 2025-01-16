@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mensaje(x) {
+            let mensaje = document.getElementById("desc");
+            switch (x) {
+                case "madrid":
+                    mensaje.innerHTML = " Madrid es la capital de España";
+                    break;
+                case "londres":
+                    mensaje.innerHTML = "Londres es la capital y mayor ciudad de Inglaterra y de Reino Unido.​ Situada a orillas del río Támesis, Londres ha sido un importante asentamiento humano desde que fue fundada por los romanos con el nombre de Londinium hace casi dos milenios.6​ El núcleo antiguo de la urbe, la City de Londres, conserva básicamente su perímetro medieval de una milla cuadrada. Desde el siglo XIX el nombre «Londres» también hace referencia a toda la metrópolis desarrollada alrededor de este núcleo.​ El grueso de esta conurbación forma la región de Londres y el área administrativa del Gran Londres,​ gobernado por el alcalde y la asamblea de Londres.​"
+                    break;
+                case "paris":
+                    mensaje.innerHTML = "París (en francés: Paris) es la capital de Francia y su ciudad más poblada. Capital de la región de Isla de Francia (o «Región Parisina»), constituye el único departamento unicomunal del país. Su área metropolitana es la más poblada de toda la Unión Europea."
+                    break;
+                default:
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#">
+            <label for="">Ingrese el pais que desea visitar</label>
+            <select name="pais" id="">
+                <option value="madrid">Madrid</option>
+                <option value="londres">Londres</option>
+                <option value="paris">Paris</option>
+            </select>
+            <button type="button" onclick="mensaje(pais.value)">Enviar</button>
+        </form>
+        <p id="desc"></p>
+    </main>
+</body>
+
+</html>
