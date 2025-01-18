@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+main{
+    margin: auto;
+    width: 800px;
+    background-color: aqua;
+    text-align: center;
+}
+
+table{
+    border: 2px solid ;
+    width: 100%; 
+     border-collapse: collapse;
+}
+th,td{
+    border: 2px solid;
+}
+th{
+    background-color: pink;
+}
+td{
+    width: 170px;
+}
+
+.img { 
+     border: 2px solid;
+    width: 100px;
+    height: 100px;
+   /* width: 100%; */
+   margin:10px 10px;
+
+    /* margin: auto; */
+    background: url(../images/roja.jpg) center center / cover no-repeat local;
+}
