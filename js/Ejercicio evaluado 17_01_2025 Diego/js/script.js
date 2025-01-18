@@ -1,5 +1,5 @@
 function lavado(){
-
+    document.getElementById("")
 }
 function corte(){
 
