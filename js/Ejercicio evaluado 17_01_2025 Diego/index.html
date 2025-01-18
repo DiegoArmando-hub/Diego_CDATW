@@ -23,32 +23,81 @@
             </tr>
             <tr>
                 <td>
-                    <button type="button" onclick="lavado()">¿Quieres lavado?</button>
-                    <p id="lavado"></p>
-                </td>
-                <td>
-                    <button type="button" onclick="corte()">¿Quieres corte?</button>
-                    <p id="corte"></p>
-                </td>
-                <td>
-                    <button type="button" onclick="tenir()">¿Vas a teñirte?</button>
-                    <p id="tenir"></p>
-                </td>
-                <td>
-                    <button type="button">Porcelana rojas</button><br><br>
-                    <button type="button">Porc. francesa</button><br><br>
-                    <button type="button">Borrar</button>
-                </td>
-                <td>
-                    <div class="img">
-                       
+                    <input type="radio" name="lava" id="" onclick="lavado('si')">SI
+                    <input type="radio" name="lava" id="" onclick="lavado('no')">NO
+
+                    <!-- <button id="lav" type="button" onclick="lavado()">¿Quieres lavado?</button> -->
+                    <div class="t_lavado">
+                        <p id="lavado"></p>
                     </div>
-                   
+
+                </td>
+                <td>
+                    <input type="radio" name="corte" id="" onclick="corte('si')">SI
+                    <input type="radio" name="corte" id="" onclick="corte('no')">NO
+                    <!-- <button id="cort" type="button" onclick="corte()">¿Quieres corte?</button> -->
+                    <div class="t_lav">
+                        <p id="corte"></p>
+                    </div>
+
+                </td>
+                <td>
+                    <input type="radio" name="tenir" id="" onclick="tenir('si')">SI
+                    <input type="radio" name="tenir" id="" onclick="tenir('no')">NO
+                    <!-- <button id="ten" type="button" onclick="tenir()">¿Vas a teñirte?</button> -->
+                    <div class="t_ten">
+                        <p id="tenir"></p>
+                    </div>
+
+                </td>
+                <td>
+                    <button type="button" onclick="roja()">Porcelana rojas</button><br><br>
+                    <button type="button" onclick="franc()">Porc. francesa</button><br><br>
+                    <button type="button" onclick="borrar()">Borrar</button>
+                </td>
+                <td id="td_img">
+                    <div class="img">
+                        <img id="img" src="images/roja.jpg" alt="">
+                    </div>
+
                 </td>
             </tr>
         </table>
 
 
+        <button class="b_ingresar" type="button" onclick="mostrarFormulario()">Ingresar datos</button>
+
+
+        <div class="formulario" id="formulario">
+            <form action="#" id="form">
+
+                <label for="tel">Telefono:</label>
+                <input type="number" name="telefono" id="tel" required>
+                <label for="nom">Nombre:</label>
+                <input type="text" name="nombre" id="nom"><br><br>
+                <div id="b_validar">
+                   <button type="button"  onclick="valida(telefono.value,nombre.value)">Validar</button> 
+                </div>
+                <div id="b_agrega_cl">
+                   <button  type="button" onclick="guardar_cliente(nombre.value)">Guardar cliente</button> 
+                </div>
+                
+            </form>
+
+        </div>
+
+
+        <!-- <div class="resultado" id="datos">
+            <p></p>
+        </div> -->
+
+
+        <button type="button" class="b_clientes" onclick="mostrar_clientes()">Mostrar clientes</button>
+
+        <div class="array" id="array">
+
+            <p id="clientes"></p>
+        </div>
     </main>
 </body>
 
