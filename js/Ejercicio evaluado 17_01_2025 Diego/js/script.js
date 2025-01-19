@@ -1,26 +1,19 @@
 function lavado(x) {
-  if (x == "si") {
+  if (x === "si") {
     document.getElementById("lavado").innerHTML = "SI";
-  } else if (x == "no") {
+  } else if (x === "no") {
     document.getElementById("lavado").innerHTML = "NO";
   }
-  // let texto="Desea lavar\n SI / NO";
-  // if(confirm(texto)== true){
-  //     document.getElementById("lavado").innerHTML="SI";
-  //     document.getElementById("lav").style.display="none";
-  // }else{
-  //     document.getElementById("lavado").innerHTML="NO";
-  //     document.getElementById("lav").style.display="none";
-  // }
 }
-function corte(x) {
-  if (x == "si") {
+function corte_u(x) {
+  // console.log(x);
+  if (x === "si") {
     document.getElementById("corte").innerHTML = "SI";
-  } else if (x == "no") {
+  } else if (x === "no") {
     document.getElementById("corte").innerHTML = "NO";
   }
 }
-function tenir(x) {
+function tenir_u(x) {
   if (x == "si") {
     document.getElementById("tenir").innerHTML = "SI";
   } else if (x == "no") {
@@ -39,21 +32,61 @@ function borrar() {
   document.getElementById("img").style.display = "none";
   document.getElementById("formulario").style.display = "none";
   document.getElementById("form").reset();
+  document.getElementById("form_lav").reset();
+  // document.getElementById("form_corte").reset();
+  // document.getElementById("form_ten").reset();
   document.getElementById("array").style.display = "none";
-}
-function mostrarFormulario() {
-  //   document.getElementById("d_cli").style.display = "block";
-  document.getElementById("formulario").style.display = "block";
-  document.getElementById("b_agrega_cl").style.display = "none";
   document.getElementById("b_validar").style.display = "block";
+  document.getElementById("b_agrega_cl").style.display = "none";
+}
+// prueba ocultar y mostrar desde el mismo boton
+function mostrarFormulario() {
+  // Obtener el div con el id "formulario"
+  const formulario = document.getElementById("formulario");
+  const btn_validar = document.getElementById("b_validar");
+  const btn_guarda_cli = document.getElementById("b_agrega_cl");
+
+  // Alternar la visibilidad del formulario
+  if (formulario.style.display === "none" || formulario.style.display === "") {
+    // Si el formulario está oculto, mostrarlo
+    formulario.style.display = "block";
+    //Pregunto si el boton "Validar" esta oculto o no tiene un estilo definido (=== "") y el boton "Guardar cliente" esta visible y los envio en el mismo estado
+    if (
+      (btn_validar.style.display === "none" ||
+        btn_validar.style.display === "") &&
+      (btn_guarda_cli.style.display === "block" ||
+        btn_guarda_cli.style.display !== "")
+    ) {
+      btn_validar.style.display = "none";
+      btn_guarda_cli.style.display = "block";
+    } else {
+      btn_validar.style.display = "block";
+      btn_guarda_cli.style.display = "none";
+    }
+  } else {
+    // Si el formulario está visible, ocultarlo
+    formulario.style.display = "none";
+    if (
+      (btn_validar.style.display === "none" ||
+        btn_validar.style.display === "") &&
+      (btn_guarda_cli.style.display === "block" ||
+        btn_guarda_cli.style.display !== "")
+    ) {
+      btn_validar.style.display = "none";
+      btn_guarda_cli.style.display = "block";
+    } else {
+      btn_validar.style.display = "block";
+      btn_guarda_cli.style.display = "none";
+    }
+  }
 }
 function valida(x, y) {
-  if (x == "" || y == "") {
+  if (x === "" || y === "") {
     alert("No puede enviar campos vacios");
   } else {
     let patron = /^[67]{1}[0-9]{8}$/;
     if (patron.test(x)) {
-      // alert("info ok")
+       alert("La información ingresada esta correcta")
       document.getElementById("b_validar").style.display = "none";
       document.getElementById("b_agrega_cl").style.display = "block";
       document.getElementById("tel").disabled = true;
@@ -65,79 +98,49 @@ function valida(x, y) {
     }
   }
 }
-function mostrar_clientes() {
-  document.getElementById("array").style.display = "block";
-  const clientes = ["Diego", "Juan", "Pedro", "Luis"];
-  let n_cli = clientes.length;
 
+// Función que maneja la visualización y creación de la lista de clientes
+function actualizarClientes(clientes) {
+  const n_cli = clientes.length;
   let text = "<ul>";
+  
   for (let i = 0; i < n_cli; i++) {
-    text += clientes[i] + "<br>";
+    text += '<li>' + clientes[i]+'</li>';
   }
   text += "</ul>";
-
-  document.getElementById("clientes").innerHTML = text;
+  
+  document.getElementById("array").innerHTML = text;
 }
 
-function guardar_cliente(nom) {
-  const clientes = ["Diego", "Juan", "Pedro", "Luis"];
-  clientes.push(nom);
-  let n_cli = clientes.length;
+// Función para mostrar/ocultar la lista de clientes
+function mostrar_clientes() {
+  const div_array_cl = document.getElementById("array");
 
-  let text = "<ul>";
-  for (let i = 0; i < n_cli; i++) {
-    text += clientes[i] + "<br>";
+  if (div_array_cl.style.display === "none" || div_array_cl.style.display === "") {
+    div_array_cl.style.display = "block";
+    
+    const clientes = ["Diego", "Juan", "Pedro", "Luis", "Karla", "Maria", "Celina"];
+    actualizarClientes(clientes); // Actualizar el listado de clientes
+  } else {
+    div_array_cl.style.display = "none";
   }
-  text += "</ul>";
+}
 
+// Función para guardar un nuevo cliente y actualizar la lista
+function guardar_cliente(nom) {
+  const clientes = ["Diego", "Juan", "Pedro", "Luis", "Karla", "Maria", "Celina"];
+  
+  // Agregar el nuevo cliente al array
+  clientes.push(nom);
+  
+  // Mostrar la lista actualizada de clientes
+  actualizarClientes(clientes);
+  
+  // Realizar otras acciones para habilitar campos y actualizar botones
   document.getElementById("array").style.display = "block";
-  document.getElementById("clientes").innerHTML = text;
   document.getElementById("tel").disabled = false;
   document.getElementById("nom").disabled = false;
   document.getElementById("form").reset();
   document.getElementById("b_validar").style.display = "block";
   document.getElementById("b_agrega_cl").style.display = "none";
-  //   document.getElementById("formulario").style.display = "none";
 }
-
-// function pideDatos() {
-//     let tel = prompt("Introduce el teléfono móvil");
-
-//     // Validación para teléfono vacío
-//     while (tel == "") {
-//         alert("No ha ingresado información");
-//         tel = prompt("Introduce el teléfono móvil");
-//     }
-
-//     // Convertir el teléfono a un número
-//     let n = parseInt(tel);
-
-//     // Verificar si el teléfono tiene el formato adecuado
-//     valida(n);
-
-//     function nombre() {
-//         let nombre = prompt("Ingresa tu nombre");
-
-//         // Validar que el nombre no esté vacío
-//         while (nombre == "") {
-//             alert("No ha ingresado información en el campo nombre");
-//             nombre = prompt("Ingresa tu nombre");
-//         }
-//         if(nombre !=""){
-//           document.getElementById("datos").innerHTML = "Hola " + nombre + ", tu teléfono es " + tel;
-//         }
-//         // Mostrar los datos si el nombre es válido
-
-//     }
-
-//     function valida_n(x) {
-//         let patron = /^[67]{1}[0-9]{8}$/;
-
-//         if (patron.test(x)) {
-//             nombre();  // Si el número es válido, pedir el nombre
-//         } else {
-//             alert("Número incorrecto");
-//             pideDatos();  // Si el número no es válido, volver a pedirlo
-//         }
-//     }
-//}

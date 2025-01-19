@@ -13,57 +13,71 @@
     <main>
         <h2>PELUQUERÍ<A></A></h2>
         <p>Rellena el formulario</p>
+        
+        <form action="#" id="form_lav">
+            <table>
+                <tr>
+                    <th>LAVADO</th>
+                    <th>CORTE</th>
+                    <th>TEÑIR</th>
+                    <th colspan="2">MANICUARA</th>
+                </tr>
+                <tr>
+                    <td>
 
-        <table>
-            <tr>
-                <th>LAVADO</th>
-                <th>CORTE</th>
-                <th>TEÑIR</th>
-                <th colspan="2">MANICUARA</th>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" name="lava" id="" onclick="lavado('si')">SI
-                    <input type="radio" name="lava" id="" onclick="lavado('no')">NO
+                        <input type="radio" name="lava" id="" onclick="lavado('si')">SI
+                        <input type="radio" name="lava" id="" onclick="lavado('no')">NO
 
-                    <!-- <button id="lav" type="button" onclick="lavado()">¿Quieres lavado?</button> -->
-                    <div class="t_lavado">
-                        <p id="lavado"></p>
-                    </div>
+                        <!-- <button id="lav" type="button" onclick="lavado()">¿Quieres lavado?</button> -->
+                        <div class="t_lavado">
+                            <p id="lavado"></p>
+                        </div>
 
-                </td>
-                <td>
-                    <input type="radio" name="corte" id="" onclick="corte('si')">SI
-                    <input type="radio" name="corte" id="" onclick="corte('no')">NO
-                    <!-- <button id="cort" type="button" onclick="corte()">¿Quieres corte?</button> -->
-                    <div class="t_lav">
-                        <p id="corte"></p>
-                    </div>
 
-                </td>
-                <td>
-                    <input type="radio" name="tenir" id="" onclick="tenir('si')">SI
-                    <input type="radio" name="tenir" id="" onclick="tenir('no')">NO
-                    <!-- <button id="ten" type="button" onclick="tenir()">¿Vas a teñirte?</button> -->
-                    <div class="t_ten">
-                        <p id="tenir"></p>
-                    </div>
 
-                </td>
-                <td>
-                    <button type="button" onclick="roja()">Porcelana rojas</button><br><br>
-                    <button type="button" onclick="franc()">Porc. francesa</button><br><br>
-                    <button type="button" onclick="borrar()">Borrar</button>
-                </td>
-                <td id="td_img">
-                    <div class="img">
-                        <img id="img" src="images/roja.jpg" alt="">
-                    </div>
 
-                </td>
-            </tr>
-        </table>
+                    </td>
+                    <td>
 
+
+                        <input type="radio" name="corte" id="" onclick="corte_u('si')">SI
+                        <input type="radio" name="corte" id="" onclick="corte_u('no')">NO
+
+                        <div class="t_lav">
+                            <p id="corte"></p>
+                        </div>
+
+
+
+
+
+                    </td>
+                    <td>
+                        <form action="#" id="form_ten">
+                            <input type="radio" name="tenir" id="" onclick="tenir_u('si')">SI
+                            <input type="radio" name="tenir" id="" onclick="tenir_u('no')">NO
+                            <!-- <button id="ten" type="button" onclick="tenir()">¿Vas a teñirte?</button> -->
+                            <div class="t_ten">
+                                <p id="tenir"></p>
+                            </div>
+                        </form>
+
+
+                    </td>
+                    <td>
+                        <button type="button" onclick="roja()">Porcelana rojas</button><br><br>
+                        <button type="button" onclick="franc()">Porc. francesa</button><br><br>
+                        <button type="button" onclick="borrar()">Borrar</button>
+                    </td>
+                    <td id="td_img">
+                        <div class="img">
+                            <img id="img" src="images/roja.jpg" alt="">
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+        </form>
 
         <button class="b_ingresar" type="button" onclick="mostrarFormulario()">Ingresar datos</button>
 
@@ -76,12 +90,12 @@
                 <label for="nom">Nombre:</label>
                 <input type="text" name="nombre" id="nom"><br><br>
                 <div id="b_validar">
-                   <button type="button"  onclick="valida(telefono.value,nombre.value)">Validar</button> 
+                    <button type="button" onclick="valida(telefono.value,nombre.value)">Validar</button>
                 </div>
                 <div id="b_agrega_cl">
-                   <button  type="button" onclick="guardar_cliente(nombre.value)">Guardar cliente</button> 
+                    <button type="button" onclick="guardar_cliente(nombre.value)">Guardar cliente</button>
                 </div>
-                
+
             </form>
 
         </div>
@@ -92,11 +106,11 @@
         </div> -->
 
 
-        <button type="button" class="b_clientes" onclick="mostrar_clientes()">Mostrar clientes</button>
+        <button type="button" class="b_clientes" onclick="mostrar_clientes()">Nuestros clientes</button>
 
         <div class="array" id="array">
 
-            <p id="clientes"></p>
+
         </div>
     </main>
 </body>

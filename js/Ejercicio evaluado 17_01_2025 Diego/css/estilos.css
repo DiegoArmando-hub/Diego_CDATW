@@ -72,11 +72,9 @@ img {
     display: none;
     width: 100%;
     text-align: left;
-    
+    list-style-type: none;
 }
-#b_validar{
-    background-color: rebeccapurple;
-}
-#b_agrega_cl{
-    background-color: red;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
