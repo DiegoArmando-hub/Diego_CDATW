@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar color fondo</title>
+
+    <style>
+        body {box-sizing: border-box;}
+        
+        form {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 210px;
+            height: 105px;
+            margin: 15px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 4px dashed rgb(105, 105, 105);
+            box-shadow: 3px 3px 5px rgb(90, 90, 90)}
+
+        h2 {
+            width: 435px;
+            text-align: center;
+            padding: 10px 15px;
+        }
+        
+        .bot1 {margin-top: 15px;}    
+    
+    </style>
+
+    <script>   
+
+      function cambioColor(c){
+          switch (c) {
+        
+            case "Rojo":
+            document.getElementById("cambiar").style.backgroundColor="red";
+            break;
+
+            case "Amarillo":
+            document.getElementById("cambiar").style.backgroundColor="yellow";
+            break;
+
+            case "Verde":
+            document.getElementById("cambiar").style.backgroundColor="green";
+            break;
+            
+            case "Azul":
+            document.getElementById("cambiar").style.backgroundColor="blue";
+            break;
+          }
+      }
+
+    </script>
+
+</head>
+<body>
+    <h2 id="cambiar">Cambiar el color de fondo de este mensaje</h2>
+    <form name="color">
+            <select name="color">
+                <option  value="Rojo">Rojo</option>
+                <option  value="Amarillo">Amarillo</option>
+                <option  value="Verde">Verde</option>
+                <option  value="Azul">Azul</option>
+            </select><br>
+
+        <input type="button" value="Cambiar color de fondo" class="bot1" onClick="cambioColor(color.value)"><!--Creamos el botón para que cuando demos al botón nos devuelva la letra-->
+        
+    </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <style>
+        #texto{
+            border: 2px solid;
+            padding: 20px;
+            font-size: 40px;
+        }
+        .cont{
+            width: 180px;
+            border: 5px dashed gray;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 5px 5px 8px 2px #888888;
+        }
+    </style>
+</head>
+<body>
+    <div id="texto">Cambiar el color de fondo de este mensaje</div>
+
+    <div class="cont">
+        <form action="#">
+            <select name="colores" id="">
+                <option value="red" >rojo</option>
+                <option value="blue">azul</option>
+                <option value="orange">naranja</option>
+            </select><br><br>
+            <button type="button" onclick="cambia(colores.value)">Cambia color de fondo</button>
+        </form>
+
+    </div>
+
+</body>
+</html>

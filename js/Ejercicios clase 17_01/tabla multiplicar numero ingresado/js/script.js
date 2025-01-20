@@ -3,6 +3,7 @@ function multiplicar(x) {
   let resultado = "";
   for (let i = 1; i <= 10; i++) {
     resultado += num + " * " + i + " = " + num * i + "<br>";
+    console.log(resultado);
   }
 //   document.write(resultado);
   document.getElementById("tabla").innerHTML = resultado;

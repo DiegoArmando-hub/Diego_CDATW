@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+	.estilo1{
+		font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+		color: rgba(201,49,51,1.00);
+	}
+	.estilo2{
+		font-family:Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+		color:rgba(0,0,0,1.00);
+	}
+	.estilo3{
+		font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+		color:blue;
+	}
+	.estilo4{
+		font-family:Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+		color:chartreuse;
+	}
+</style>
+<script>
+	function cambiarEstilos(){
+		let elementos=document.getElementsByName("cambio");
+		
+		for( i=0;i<elementos.length;i++){
+			if(elementos[i].checked==true){
+				document.getElementById("seleccionar").className=elementos[i].value;
+			}
+		}
+	}
+	
+</script>
+</head>
+
+<body>
+<h1 id="seleccionar">Cambiando estilo</h1>
+
+<form>
+	<input type="radio" value="estilo1" name="cambio">Estilo1
+	<input type="radio" value="estilo2" name="cambio">Estilo2
+	<input type="radio" value="estilo3" name="cambio">Estilo3
+	<input type="radio" value="estilo4" name="cambio">Estilo4
+	<input type="button" value="cambiar" onClick="cambiarEstilos()">
+</form>
+</body>
+</html>
