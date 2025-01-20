@@ -1,0 +1,23 @@
+let numero = "18";
+let edad = Number(numero);
+console.log(edad); //devuelve NaN Not a Number
+
+//como se puede corregir este tema
+
+if (isNaN(edad)) {
+  console.log("No es un numero");
+} else {
+  if (edad >= 18) {
+    console.log("Puede votar");
+  } else {
+    console.log("Es muy joven para votar");
+  }
+}
+//El mismo ejercicio usando el operador ternario
+
+if(isNaN(edad)){
+    console.log("No es un número")
+}else{
+    let n= (edad>=18)? "Pede votar":"Muy joven para votar"
+    console.log(n);
+}

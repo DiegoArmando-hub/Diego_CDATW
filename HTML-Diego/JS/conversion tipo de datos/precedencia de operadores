@@ -1,0 +1,26 @@
+//presendencia de operadores
+
+let x=5;
+let y=10;
+
+// ++ preincrementar la variable x (x++) (mas + de suma) la variable "y" en posdecremento (y--)
+
+let z= ++x + y--;
+
+console.log(x)
+console.log(x)
+console.log(x)
+
+console.log(y)
+console.log(y)
+console.log(y)
+console.log(z)
+
+
+// El resultado es (16) ya que para x primero le aplica un preincremento entonces en este caso primero se incrementa el valor de 5 pasa a 6 y posteriormente se le suma el valor de y que es 10 en este caso el 10 no varía, pero debido a que estamos aplicnado un post decremento, entonces primero usamos el valor actual qeu es 10 y la proxima vez que use "y" tenia pendiente un decremento entonces la proxima vez que ocupemos el valor de "y" sería 9
+
+let resultado = 4 +5 * 6 / 3;
+console.log(resultado)
+//presedencia de operadores va de izquierda a derecha, toma como prioridad la multiplicación  y división en este caso en primer lugar se encuentra la multiplicación seguida de la división
+//primero se resuelve la multiplicación 6*5=30 luego la división 30/3=10 y por último la suma 10+4=14 que sería el resultado final
+//en el caso de que exista valores entre parentesis entonces primero resuelve las operaciones de los parentesis y luego multiplicacion y division

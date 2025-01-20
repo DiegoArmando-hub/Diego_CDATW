@@ -1,0 +1,18 @@
+let miNumero = "25";
+console.log(typeof miNumero);
+
+let miNumeroInt = 10;
+console.log(typeof miNumero);
+
+let edad = Number(miNumero);
+
+if (edad >= 18) {
+  console.log("Puede votar");
+} else {
+  console.log("Muy joven para votar");
+}
+
+//mismo ejercicio anterior usando el operador ternario
+
+let r = edad >= 18 ? "Puede votar" : "Muy joven para votar";
+console.log(r);

@@ -47,3 +47,42 @@
 </form>
 </body>
 </html>
+
+
+<h1 id="seleccionar">Cambiando estilo</h1>:
+
+<!-- 
+2. <h1 id="seleccionar">Cambiando estilo</h1>
+
+Es el título que se mostrará en la página y cuya apariencia cambiará según la opción seleccionada en el formulario.
+
+Inicialmente, el título tiene el id="seleccionar", lo que lo hace un objetivo para el script de JavaScript.
+
+3. Formulario con botones de opción (radio buttons):
+
+Este formulario tiene cuatro opciones de estilo que se presentan como botones de radio, cada uno con un valor correspondiente a una de las clases definidas en el CSS:
+	Estilo1, Estilo2, Estilo3 y Estilo4.
+Un botón de tipo input (con el valor "cambiar") permite activar el cambio de estilo cuando se presiona.
+
+Script en JavaScript:
+
+1. Función cambiarEstilos():
+
+La función se ejecuta cuando el usuario hace clic en el botón "cambiar".
+
+Utiliza getElementsByName("cambio") para obtener todos los elementos de tipo radio (los botones de opción) con el nombre "cambio".
+
+Recorre todos los botones de radio (usando un bucle for) y verifica cuál está seleccionado (usando checked == true).
+
+Si un botón está marcado, toma su valor (elementos[i].value), que corresponde a uno de los estilos CSS (estilo1, estilo2, etc.), y asigna ese valor como la clase del elemento con id="seleccionar".
+
+	document.getElementById("seleccionar").className = elementos[i].value;: Esta línea cambia la clase del <h1> al valor del botón de radio seleccionado.
+
+Funcionamiento del código:
+1. El usuario selecciona uno de los botones de radio (Estilo1, Estilo2, Estilo3 o Estilo4).
+2. Luego presiona el botón "cambiar".
+3.El script revisa cuál de los botones de radio está seleccionado y cambia la clase del título <h1 id="seleccionar">.
+4.Dependiendo de la clase asignada, el título cambia su apariencia (fuente y color de texto).
+
+Resumen:
+Este código permite cambiar dinámicamente el estilo de un título en la página utilizando botones de radio. El usuario puede seleccionar entre cuatro estilos predefinidos, y al hacer clic en el botón "cambiar", el título cambiará su fuente y color según la opción seleccionada. -->
