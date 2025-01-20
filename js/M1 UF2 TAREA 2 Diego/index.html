@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>PELUQUERÍA</h1>
+        <p>Rellena el formulario</p>
+
+        <table>
+            <tr>
+                <th>LAVADO</th>
+                <th>CORTE</th>
+                <th>TEÑIR</th>
+                <th>MANICURA</th>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" id="boton1" name="1" onclick="servicio(1) ">¿Quieres lavado?</button>
+                    <p id="texto1"></p>
+                </td>
+                <td>
+                    <button type="button" id="boton2" name="2" onclick="servicio(2)" >¿Que tipo de corte?</button>
+                    <p id="texto2"></p>
+                </td>
+                <td>
+                    <button type="button" id="boton3" name="3" onclick="servicio(3)">¿Vas a teñirte?</button>
+                    <p id="texto3"></p>
+                </td>
+                <td >
+                     <div class="manicura" >
+                        <div class="opciones">
+                            <button type="button" class="b1" onclick="roja()">Porcelana rojas</button><br>
+                            <button type="button" class="b1" onclick="francesa()">Porce. francesa</button><br>
+                            <button type="button" class="b1" ondblclick="borrar()">Borrar</button>
+                        </div>
+                        <div class="imagen">
+                            <img src="images/opt1.jpg" id="imagen" alt="" >
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+
+        <div class="formulario">
+            
+            <button type="button" onclick="datos()">pide datos</button>
+            <div>
+                <form action="#">
+                    
+                </form>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

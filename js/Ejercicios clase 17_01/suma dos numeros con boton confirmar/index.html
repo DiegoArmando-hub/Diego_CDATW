@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma dos numeros</title>
+    <script src="js/script.js"></script>
+    <style>
+        label{
+            display: block;
+
+        }
+        #resultado{
+            margin: 10px 0;
+            width: 100px;
+            border: 2px solid red;        
+            height: 50px;
+            text-align: center;
+            font-size: 40px;
+        }
+        input[type=number]{
+            width: 100px;
+            
+        }
+        button{
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <form action="#" id="form">
+            <label for="n1">Numero 1</label>
+            <input type="number" name="numero1" id="n1">
+            <label for="n2">Número 2</label>
+            <input type="number" name="numero2" id="n2">
+            <div id="resultado"></div>
+            <button type="button" onclick="conf()">Preguntar</button>
+            <button type="button" onclick="sumar(numero1.value,numero2.value)">sumar</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    margin: auto;
+    width: 800px;;
+}
+h1,p{
+    text-align: center;
+}
+table{
+    border: 2px solid ;
+    border-collapse: collapse;
+}
+
+th,td{
+    width: 150px;
+    border: 2px solid;
+    margin: 10px;
+    text-align: center;
+}
+th{
+    background-color: pink;
+}
+button{
+    margin: 5px;
+    padding: 0 5px;
+}
+.manicura{
+    display: flex;
+    flex-flow: row wrap;
+    width: 250px;
+    
+    
+}
+.opciones{
+    border-collapse: collapse;
+    flex-basis: 20;
+    border-right: 2px solid;
+    padding: 10px 5px;
+}
+.b1{
+    width: 110px;
+}
+.imagen{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 1px solid darkgray;
+    width: 75px;
+    
+}
+img{
+    width: 70px;
+    
+}
