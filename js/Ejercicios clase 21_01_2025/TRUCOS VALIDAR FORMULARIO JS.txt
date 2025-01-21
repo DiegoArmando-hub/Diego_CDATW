@@ -1,0 +1,113 @@
+CÓDIGOS PARA VALIDAR FORMULARIO 
+7.3.6. Validar un número de DNI
+Se trata de comprobar que el número proporcionado por el usuario se corresponde con
+un número válido de Documento Nacional de Identidad o DNI. Aunque para cada país o
+región los requisitos del documento de identidad de las personas pueden variar, a
+continuación se muestra un ejemplo genérico fácilmente adaptable. La validación no
+sólo debe comprobar que el número esté formado por ocho cifras y una letra, sino que
+también es necesario comprobar que la letra indicada es correcta para el número
+introducido:
+valor = document.getElementById("campo").value;
+var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N',
+'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+if( !(/^\d{8}[A-Z]$/.test(valor)) ) {
+return false;
+}
+if(valor.charAt(8) != letras[(valor.substring(0, 8))%23]) {
+return false;
+}
+La primera comprobación asegura que el formato del número introducido es el correcto,
+es decir, que está formado por 8 números seguidos y una letra. Si la letra está al
+principio de los números, la comprobación sería /^[A-Z]\d{8}$/. Si en vez de ocho
+números y una letra, se requieren diez números y dos letras, la comprobación sería
+/^\d{10}[A-Z]{2}$/ y así sucesivamente.
+
+\d es un metacaracter que coincide con cualquier dígito numérico (0-9).
+\w coincide con cualquier carácter alfanumérico (letras y números) y el guion bajo (_).
+
+La segunda comprobación aplica el algoritmo de cálculo de la letra del DNI y la compara
+con la letra proporcionada por el usuario. El algoritmo de cada documento de
+identificación es diferente, por lo que esta parte de la validación se debe adaptar
+convenientemente.
+7.3.7. Validar un número de teléfono
+Los números de teléfono pueden ser indicados de formas muy diferentes: con prefijo
+nacional, con prefijo internacional, agrupado por pares, separando los números con
+guiones, etc.
+El siguiente script considera que un número de teléfono está formado por nueve dígitos
+consecutivos y sin espacios ni guiones entre las cifras:
+valor = document.getElementById("campo").value;
+if( !(/^\d{9}$/.test(valor)) ) {
+return false;
+}
+Introducción a JavaScript Capítulo 7. Formularios
+www.librosweb.es 95
+Una vez más, la condición de JavaScript se basa en el uso de expresiones regulares, que
+comprueban si el valor indicado es una sucesión de nueve números consecutivos. A
+continuación se muestran otras expresiones regulares que se pueden utilizar para otros
+formatos de número de teléfono:
+Número Expresión regular Formato
+900900900 /^\d{9}$/ 9 cifras seguidas
+900-900-900 /^\d{3}-\d{3}-\d{3}$/ 9 cifras agrupadas de 3 en 3 y separadas
+por guiones
+900 900900 /^\d{3}\s\d{6}$/ 9 cifras, las 3 primeras separadas por un
+espacio
+900 90 09
+00
+/^\d{3}\s\d{2}\s\d{2}\s\d{2}$/
+9 cifras
+las 3 primeras separadas por un espacio
+las siguientes agrupadas de 2 en 2
+(900)
+900900
+/^\(\d{3}\)\s\d{6}$/
+9 cifras
+las 3 primeras encerradas por paréntesis
+y un espacio de separación respecto del
+resto
++34
+900900900
+/^\+\d{2,3}\s\d{9}$/
+Prefijo internacional (+ seguido de 2 o 3
+cifras)
+espacio en blanco y 9 cifras consecutivas
+7.3.8. Validar que un checkbox ha sido seleccionado
+Si un elemento de tipo checkbox se debe seleccionar de forma obligatoria, JavaScript
+permite comprobarlo de forma muy sencilla:
+elemento = document.getElementById("campo");
+if( !elemento.checked ) {
+return false;
+}
+Si se trata de comprobar que todos los checkbox del formulario han sido seleccionados,
+es más fácil utilizar un bucle:
+formulario = document.getElementById("formulario");
+for(var i=0; i<formulario.elements.length; i++) {
+var elemento = formulario.elements[i];
+if(elemento.type == "checkbox") {
+if(!elemento.checked) {
+return false;
+}
+}
+}
+7.3.9. Validar que un radiobutton ha sido seleccionado
+Aunque se trata de un caso similar al de los checkbox, la validación de los radiobutton
+presenta una diferencia importante: en general, la comprobación que se realiza es que el
+Introducción a JavaScript Capítulo 7. Formularios
+www.librosweb.es 96
+usuario haya seleccionado algún radiobutton de los que forman un determinado grupo.
+Mediante JavaScript, es sencillo determinar si se ha seleccionado algún radiobutton de
+un grupo:
+opciones = document.getElementsByName("opciones");
+var seleccionado = false;
+for(var i=0; i<opciones.length; i++) {
+if(opciones[i].checked) {
+seleccionado = true;
+break;
+}
+}
+if(!seleccionado) {
+return false;
+}
+El anterior ejemplo recorre todos los radiobutton que forman un grupo y comprueba
+elemento por elemento si ha sido seleccionado. Cuando se encuentra el primer
+radiobutton seleccionado, se sale del bucle y se indica que al menos uno ha sido
+seleccionado.
