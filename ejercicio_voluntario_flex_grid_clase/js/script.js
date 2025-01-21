@@ -16,10 +16,9 @@
 
 function fimagenes(num){
      let a_img = ["images/rosas_rojas.jpg","images/rosas_rosas.jpg","images/rosas_amarillas.jpg","images/rosas_blancas.jpg","images/rosas_multi.jpg"];
-    // console.log(num);
-    // console.log(a_img[num]);
-    let ruta=( a_img[num]);
-    // console.log("'"+ruta+"'");
+
+    let ruta=a_img[num];
+   
 
     document.getElementById("flores").src=ruta;
 

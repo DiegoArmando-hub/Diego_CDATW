@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validar() {
+            let n = document.getElementById("numero").value;
+            console.log(n)
+            let patron = /^[1-9]$|^10$/;
+
+            if (n === "") {
+                alert("debe ingresar un número")
+            } else {
+
+                if (patron.test(parseInt(n))) {
+                    alert("numero valido");
+                } else
+                    alert("numero no valido");
+                    // n="";
+            }
+
+
+        }
+
+        function valida2(){
+            let nu = document.getElementById("num").value;
+            let texto;
+
+            if(isNaN(nu)|| nu < 1|| nu > 10){
+                texto = "NO, debes ingresar un número del 1 al 10";
+            }else{
+                texto="Correcto, has ingresado: "+nu;
+            }
+            document.getElementById("p_texto").innerHTML=texto;
+        }
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <form action="#">
+            <label for="">Escribe un número del 1 al 10:</label>
+            <input type="text" name="num" id="numero">
+            <button onclick="validar()">validar</button>
+        </form>
+<hr>
+        <form action="#">
+            <label for="num">Escribe un número</label>
+            <input type="text" name="number" id="num">
+            <button type="button" onclick="valida2()">Validar</button>
+
+        </form>
+        <p id="p_texto"></p>
+    </main>
+</body>
+
+</html>
