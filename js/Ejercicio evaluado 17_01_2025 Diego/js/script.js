@@ -144,3 +144,4 @@ function guardar_cliente(nom) {
   document.getElementById("b_validar").style.display = "block";
   document.getElementById("b_agrega_cl").style.display = "none";
 }
+
