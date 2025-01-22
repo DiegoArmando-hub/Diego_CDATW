@@ -5,34 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="js/script.js"></script>
-    <style>
-        p{
-            /* border: 2px solid ; */
-            height: 20px;
-            width: 350px;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos/estilo.css">
+ 
 </head>
 <body>
-    <main>
-        <fieldset>
-            <legend>Dinos que producto te interesa</legend>
-            <form action="#" id="form" >
-                <label for="name">Nombre: </label>
-                <input type="text" name="Nombre" id="name" required>
-                <p id="t_name"></p><br>
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email">
-                <p id="t_email"></p>
-                <input type="radio" name="" id="">Fanta de Naranja de 1 litro</input><br>
-                <input type="radio" name="" id="">Fanta de Naranja de medio litro</input><br>
-                <input type="radio" name="" id="">Fanta de limón de 1 litro</input><br>
-                <input type="radio" name="" id="">Fanta de limón de medio litro</input><br>
-            </form>
-            
-        </fieldset><br>
-        <!-- <button type="button" onclick="validar()">Enviar</button> -->
-         <button type="submit" onclick="validar()">Enviar</button>
+    <main class="e_formulario">
+        <div class="c_formulario">
+            <fieldset>
+                <legend>Dinos que producto te interesa</legend>
+                <form action="#" id="form" >
+                    <label id="lab" for="name">Nombre: </label>
+                    <input type="text" name="Nombre" id="name" required>
+                    <p id="t_name"></p><br>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                    <p id="t_email"></p><br>
+                    <input type="radio" name="" id="">Fanta de Naranja de 1 litro</input><br>
+                    <input type="radio" name="" id="">Fanta de Naranja de medio litro</input><br>
+                    <input type="radio" name="" id="">Fanta de limón de 1 litro</input><br>
+                    <input type="radio" name="" id="">Fanta de limón de medio litro</input><br>
+                </form>
+                
+            </fieldset><br>
+            <!-- <button type="button" onclick="validar()">Enviar</button> -->
+             <button type="submit" onclick="validar()">Enviar</button>
+        </div>
+        
         
     </main>
 </body>

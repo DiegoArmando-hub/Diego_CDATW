@@ -4,16 +4,41 @@
 }
 
 /* Estilos para el formulario */
+
+
+.c_formulario{
+    width: 500px;
+    margin: auto;
+    
+}
 #formulario { 
     display: none; 
     width: 900px;
     margin: auto;
     /* padding: 20px; */
+    background-color: rgba(247, 175, 81, 0.363);
+    padding: 20px;
 
 }
+#form{
+padding: 10px;
+}
 
+#form p{
+    width: 300px;
+    display:inline-block ;
+    color: red;
+}
 
+label {
+    display: inline-block;
+    width: 70px;
+    background-color: lightgray; /* Para ver el área */
+}
 
+input[type="text"]{
+    display: inline-block;
+}
 section
 {
     width: 900px;

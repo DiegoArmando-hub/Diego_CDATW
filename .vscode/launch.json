@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/js/Ejercicios%20clase%2021_01_2025/funciones%20flecha/boton%20cambia%20estilo%20y%20texto%20boton.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/js/Ejercicios%20clase%2021_01_2025/funciones%20flecha/boton%20cambia%20estilo%20y%20texto%20boton.html"
+        }
+    ]
+}

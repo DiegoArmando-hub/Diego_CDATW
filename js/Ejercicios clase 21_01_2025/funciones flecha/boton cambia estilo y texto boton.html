@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const cambio1 = () => {
+            document.getElementById("texto").innerHTML="Este es el texto que ha cambiado el formato";
+            document.getElementById("texto").style.backgroundColor="orange";
+            document.getElementById("b_cambio").innerHTML=" haga doble click para volver al texto principal"
+        }
+        const cambio2 = () => {
+            document.getElementById("texto").innerHTML="Este es el texto principal";
+            document.getElementById("texto").style.backgroundColor="red";
+            document.getElementById("b_cambio").innerHTML="haga click para cambiar el estilo"
+        }
+    </script>
+</head>
+<body>
+    <p id="texto">Texto principal</p>
+    <button type="button" id="b_cambio" onclick="cambio1()" ondblclick="cambio2()">click cambio formato</button>
+</body>
+</html>

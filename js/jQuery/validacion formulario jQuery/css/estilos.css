@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+form{
+	width:90%;
+	height:800px;
+	border-bottom:rgba(0,153,204,1) solid 2px;
+	border-top:rgba(0,153,204,1) solid 2px;
+	margin:auto;
+	
+	}
+body{
+	background-color:rgba(36,53,123,1);
+	font-weight:700;
+	color:rgba(255,255,255,1);}
+	
+h2{
+		width:90%;
+		font-weight:900;
+		margin:auto;}
+label{
+	width:30%;
+	display:inline-block;
+	text-align:right;
+	}
+div{
+	margin:8px 0px 5px 8px;
+	}
+
+

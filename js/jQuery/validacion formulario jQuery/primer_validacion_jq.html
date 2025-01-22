@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="css/estilos.css" rel="stylesheet">
+<script src="js/jquery-3.2.1.min.js"> </script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/script.js"></script>
+
+</head>
+
+<body>
+<h2>Rellenar</h2>
+<form id="registro" method="get" action="">
+<div>
+<label>NOMBRE</label>
+<input type="text" name="nombre" id="name"> </div>
+<div>
+<label>E-MAIL</label>
+<input type="text" name="mail" id="mail"></div>
+<div>
+<label>CONTRASEÑA</label>
+<input type="password" name="contra" id="contra"></div>
+<div>
+<label>CONFIRMAR CONTRASEÑA</label>
+<input type="password" name="ccontra"></div>
+<div>
+<label>AFICIONES</label>
+<input type="checkbox" name="comer" value="comer">comer
+<input type="checkbox" name="comer" value="beber">beber
+<input type="checkbox" name="comer" value="dormir">dormir</div>
+<div><label>FECHA NACIMIENTO</label>
+<input type="text" class="date" title="mm/dd/aa"></div>
+<div><label>PLANETA</label>
+<select>
+ <option>tierra</option>
+  <option>marte</option>
+   <option>ganimedes</option>
+   <option>no me suena nada</option>
+</select></div>
+<div>
+<label>COMENTARIOS</label>
+<textarea cols="8" rows="8"></textarea></div>
+
+<h5>¿DESEAS RECIBIR CORREO BASURA DE NUEESTRA PARTE?</h5>
+<label></label>
+<input type="radio" name="recibir" value="si">si
+<input type="radio" name="recibir" value="por supuesto">Por supuesto
+<input type="radio" name="recibir" value="¿tengo elección?">¿tengo elección? 
+<div>
+<label></label>
+<input type="submit" value="enviar">
+</div>
+
+</body>
+</html>

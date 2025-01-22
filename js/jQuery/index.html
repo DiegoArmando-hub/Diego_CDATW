@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #testarea{
+            height: 50px;
+            background-color: gray;
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"></script>
+    <script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+</head>
+
+<body>
+    <h1>EFECTOS JQUERY</h1>
+    <button onclick="new Effect.Fade($('testarea'))">Fundido de salida</button>
+    <button onclick="new Effect.Appear($('testarea'))">Fundido de entrada</button>
+    <button onclick="new Effect.SlideUp($('testarea'))">Cortinilla de subida</button>
+    <button onclick="new Effect.SlideDown($('testarea'))">Deslizar abajo</button>
+    <button onclick="new Effect.Highlight($('testarea'))">Destacar</button>
+    <button onclick="new Effect.Shake($('testarea'))">Temblor</button>
+    <div id="testarea" >
+        <p>
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora quasi odit hic vitae veritatis? Velit harum
+        quidem aut quibusdam maxime ipsa optio amet nulla error quo commodi, tempora, temporibus reiciendis? 
+        </p>
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const cambiaColorTamanio = () =>{
+            document.getElementById("muestra").style.fontSize="50px"
+            document.getElementById("muestra").style.color="black";
+        }
+
+        const volver = () =>{
+            document.getElementById("muestra").style.fontSize="16px"
+            document.getElementById("muestra").style.color="black";
+        }
+    </script>
+</head>
+<body>
+    <p id="muestra"> Estoy cambiando el estilo de un elemento HTML</p>
+    <button type="button" onclick="cambiaColorTamanio()" ondblclick="volver()">Probar</button>
+        
+</body>
+</html>
