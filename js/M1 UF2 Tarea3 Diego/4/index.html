@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAREA 4</title>
+    <script>
+      const sumar = (x,y) => {
+
+        let total = x+y;//parseInt(x)+parseInt(y);
+        document.getElementById("resultado").innerHTML= `La suma es: ${total}`
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" name="n1" id="n1" />
+    <input type="text" name="n2" id="n2" />
+    <button type="button" onclick="sumar(parseInt(n1.value),parseInt(n2.value))">Sumar</button>
+    <p id="resultado"></p>
+  </body>
+</html>

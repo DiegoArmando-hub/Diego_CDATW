@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAREA 5</title>
+    <script>
+      const validar = (dni) => {
+        // const numeros = ;
+        // const letra=;
+        const patron = /^\d{8}[A-Z]$/;
+        if (patron.test(dni)) {
+          alert("DNI ingresado en formato correcto");
+        }else{
+            alert("Formato no es el correcto")
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <label for="dni">Digite su DNI</label>
+    <input type="text" name="dni" id="dni" />
+    <button type="button" onclick="validar(dni.value)">Validar</button>
+  </body>
+</html>

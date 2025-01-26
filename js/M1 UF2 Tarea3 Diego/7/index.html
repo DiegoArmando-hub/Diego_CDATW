@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAREA 7</title>
+    <style>
+      input[type="text"] {
+        width: 250px;
+      }
+    </style>
+    <script>
+      const colores = ["red", "yellow", "blue", "green", "orange"];
+      const cambiar = (color) => {
+        const c = color.toLowerCase();
+        switch (c) {
+          case "rojo":
+            document.body.style.backgroundColor = colores[0];
+
+            break;
+          case "amarillo":
+            document.body.style.backgroundColor = colores[1];
+            break;
+          case "azul":
+            document.body.style.backgroundColor = colores[2];
+            break;
+          case "verde":
+            document.body.style.backgroundColor = colores[3];
+            break;
+          case "naranja":
+            document.body.style.backgroundColor = colores[4];
+            break;
+          default:
+            alert(
+              "No has ingresado un color valido debe ser:\n Rojo, Amarillo, Azul, Verde, Naranja"
+            );
+        }
+      };
+
+      const cambiaColor = (color) => {
+    
+        const colorUsuario = color.toLowerCase();
+
+        // Comprobamos si el color introducido está en el array
+        if (colores.includes(colorUsuario)) {
+          document.body.style.backgroundColor = colorUsuario; 
+        } else {
+          alert(
+            "Por favor, introduce un color válido: \n red,  yellow, blue, green, orange."
+          );
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <form action="#">
+      <label for="color">Ingresa el color</label>
+      <input
+        type="text"
+        name="color"
+        id="color"
+        placeholder="Rojo, Amarillo, Azul, Verde, Naranja"
+      /><br /><br />
+      <button type="button" onclick="cambiar(color.value)">
+        Cambiar color español</button
+      ><br /><br />
+      <button type="button" onclick="cambiaColor(color.value)">
+        cambiar color ingles
+      </button>
+    </form>
+  </body>
+</html>
